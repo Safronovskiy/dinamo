@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="{% static 'css/null_for_templates.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+    <title>О стадионе</title>
+</head>
+
+<body>
+    <div class="wrapper">
+
+        {% include 'header.html' %}
+
+        <main>
+            <div class="container__nav">
+                <div class="container">
+                    <div class="main__nav">
+                        <a href="#" class="main__nav-link">
+                            Главная
+                        </a>
+                        <img src="{% static 'img/main-nav-vector.svg' %}" alt="">
+                        <a href="#" class="main__nav-link">
+                            О стадионе
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="container__navigation">
+                <div class="navigation">
+                    <div class="navigation__background">
+                        <div class="container">
+                            <div class="navigation__visual">
+                                <img src="{% static 'img/navigation.svg' %}" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container__about">
+                <div class="container">
+                    <div class="about">
+                        <a href="{% url 'about:history' %}" class="about__card">
+                            <div class="card__img">
+                                <img src="{% static 'img/card_img-1.png' %}" alt="">
+                            </div>
+                            <div class="card__title">
+                                История стадиона
+                            </div>
+                        </a>
+                        <a href="{% url 'about:management' %}" class="about__card">
+                            <div class="card__img">
+                                <img src="{% static 'img/card_img-2.png' %}" alt="">
+                            </div>
+                            <div class="card__title">
+                                Руководство
+                            </div>
+                        </a>
+                        <a href="{% url 'about:brytkov' %}" class="about__card">
+                            <div class="card__img">
+                                <img src="{% static 'img/card_img-3.png' %}" alt="">
+                            </div>
+                            <div class="card__title">
+                                Наши сотрудники
+                            </div>
+                        </a>
+                        <a href="#" class="about__card">
+                            <div class="card__img">
+                                <img src="{% static 'img/card_img-4.png' %}" alt="">
+                            </div>
+                            <div class="card__title">
+                                Документы
+                            </div>
+                        </div>
+                        <a href="#" class="about__card">
+                            <div class="card__img">
+                                <img src="{% static 'img/card_img-5.png' %}" alt="">
+                            </div>
+                            <div class="card__title">
+                                Вакансии
+                            </div>
+                        </a>
+                        <p class="about__text">
+                            Национальный олимпийский стадион «Динамо» — многофункциональная арена мирового уровня.
+                        </p>
+                        <p class="about__text about__text-margin">
+                            Сертификат Всемирной легкоатлетической ассоциации первой категории, а также четвертая категория Союза европейских футбольных ассоциаций (УЕФА)
+                            позволяют проводить на стадионе легкоатлетические и футбольные турниры
+                            мирового уровня.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="container__stadium-layout">
+                <div class="container">
+                    <div class="stadium-layout">
+                        <div class="stadium-layout__title">
+                            схема секторов
+                        </div>
+                        <div class="stadium-layout__image">
+                            <img src="{% static 'img/stadium-layout-img.png' %}" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="container">
+                <div class="footer">
+                    <nav class="footer__nav">
+                        <a href="#" class="footer__link footer__text">
+                            Карта сайта
+                        </a>
+                        <a href="#" class="footer__link footer__text">
+                            Обратная связь
+                        </a>
+                    </nav>
+                    <div class="footer__social">
+                        <p class="footer__social-title footer__text">
+                            Следите за нами в соц.сетях
+                        </p>
+                        <div class="footer__social-block">
+                            <a href="#" class="social-block__link">
+                                <img src="{% static 'img/footer/instagramm.svg' %}" alt="">
+                            </a>
+                            <a href="#" class="social-block__link">
+                                <img src="{% static 'img/footer/facebook.svg' %}" alt="">
+                            </a>
+                            <a href="#" class="social-block__link">
+                                <img src="{% static 'img/footer/vk.svg' %}" alt="">
+                            </a>
+                            <a href="#" class="social-block__link">
+                                <img src="{% static 'img/footer/youtube.svg' %}" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <form action="#" class="footer__form">
+                        <p class="footer__form-title footer__text">
+                            Подписывайтесь на email-рассылку
+                        </p>
+                        <div class="footer__form-block">
+                            <input type="text" class="form-block__input" placeholder="sportsmen228@gmail.com">
+                            <button class="form-block__button footer__text">
+                                Подписаться
+                            </button>
+                        </div>
+                    </form>
+                </div>
+                <p class="footer__subtitle">
+                    2021 © Все права защищены
+                </p>
+            </div>
+        </footer>
+    </div>
+    <script src="{% static 'js/header.js' %}"></script>
+</body>
+</html>

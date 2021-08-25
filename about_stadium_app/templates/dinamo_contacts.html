@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Контакты</title>
+
+  <link rel="stylesheet" href="{% static 'css/null_for_templates.css' %}">
+  <link rel="stylesheet" href="{% static 'css/dinamo_contacts.css' %}">
+
+</head>
+<body>
+    {% include 'header.html' %}
+
+<div class="wrapper">
+
+    <nav class="navigation">
+        <ul class="navigation__list">
+            <li><a href="#">Главная</a></li>
+            <li><img src="{% static 'img/icons/arrow-nav.svg' %}" alt="svg"></li>
+            <li><a href="#">Контакты</a></li>
+        </ul>
+    </nav>
+
+<section class="slogan">
+  <h1 class="slogan__title">
+    Контакты
+  </h1>
+
+  <div class="slogan__adress">
+    Адрес: 220030, г. Минск, ул. Кирова, д. 8, корп. 6
+  </div>
+</section>
+
+<section class="info">
+  <div class="info__reception-box info__allboxex">
+    <div class="info__reception info__allblocks">
+    <h2 class="info__reception-title info__alltitles info__allitems">
+      Приёмная
+    </h2>
+    <div class="info__reception-name info__allnames info__allitems">
+      Юлия Вячеславовна Спецакова
+    </div>
+    <div class="info__reception-contacts info__allcontacts info__allitems">
+      <div class="nowrap">Телефон и факс: <a href="+375-17-243-09-11" class="red">+375 (17) 243 09 11</a></div>
+      <div class="nowrap">E-mail: <a href="mailto:stadion_dinamo@mail.ru" class="red" target="_blank">stadion_dinamo@mail.ru</a></div>
+      <div class="nowrap">E-mail: <a href="mailto:info@stadium-dinamo.by" class="red" target="_blank">info@stadium-dinamo.by</a></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="info__organization-box info__allboxex">
+    <div class="info__organization info__allblocks">
+    <h2 class="info__organization-title info__alltitles info__allitems">
+      Организация мероприятий, реклама, сотрудничество
+    </h2>
+    <div class="info__organization-name info__allnames info__allitems">
+      Дмитрий Сергеевич Демидик
+    </div>
+    <div class="info__organization-contacts info__allcontacts info__allitems">
+     <div class="nowrap">Телефон: <a href="tel:375-44-796-99-07" class="red">+375 (44) 796 99 07</a></div>
+     <div class="nowrap">E-mail: <a href="mailto:marketing@stadium-dinamo.by" class="red" target="_blank">marketing@stadium-dinamo.by</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="requisites">
+  <div class="requisites__body">
+    <h2 class="requisites__title">Реквизиты</h2>
+    
+    <div class="requisites__box1 requisites__allboxex">
+      <h3 class="requisites__box1-subtitle requisites__allboxex-allsubtitles">
+        Государственное учреждение
+        «Национальный олимпийский стадион "Динамо"»
+      </h3>
+      <div class="requisites__box1-content1 requisites__allboxex-allcontent">
+          <div class="requisites__allboxex-databox">  
+        <p class="requisites__allboxex-data copyit">р/с BY64BLBB36040191111948001001</p>
+            <div class="requisites__allboxex-databox-div">(Бюджетный)</div>
+        </div>
+ 
+      <button type="button" class="requisites__allboxex-button copybtn">
+        <img src="{% static 'img/icons/copy-gray.svg' %}" alt="icon" class="requisites__allboxex-button-icon">
+        <div class="requisites__allboxex-button-text">Скопировать</div>
+      </button>
+      </div>
+
+      <div class="requisites__box1-content2 requisites__allboxex-allcontent">
+        <div class="requisites__allboxex-databox">
+            <p class="requisites__allboxex-data copyit">р/с BY43BLBB36320191111948001001</p>
+            <div class ="requisites__allboxex-databox-div">(Внебюджетный)</div>
+        </div>
+        
+        <button type="button" class="requisites__allboxex-button copybtn">
+          <img src="{% static 'img/icons/copy-gray.svg' %}" alt="icon" class="requisites__allboxex-button-icon">
+          <div class="requisites__allboxex-button-text">Скопировать</div>
+        </button>
+    </div>
+</div>
+
+    <div class="requisites__box2 requisites__allboxex">
+      <h3 class="requisites__box2-subtitle requisites__allboxex-allsubtitles">
+        ОАО «Белинвестбанк», г. Минск, BLBBBY2X
+      </h3>
+
+      <div class="requisites__box2-content3 requisites__allboxex-allcontent">
+        <p class="requisites__allboxex-data copyit">УНП 191111948 ОКПО 378449395000</p>
+        <button type="button" class="requisites__allboxex-button copybtn">
+            <img src="{% static 'img/icons/copy-gray.svg' %}" alt="icon" class="requisites__allboxex-button-icon">
+            <div class="requisites__allboxex-button-text">Скопировать</div>
+          </button>
+      </div>
+    </div>  
+</div>
+  <div class="requisites__image">
+    <img src=" {% static 'img/stadion.png' %}" alt="stadion">
+    <div class="requisites__image-grad"></div>
+  </div>
+</section>
+
+<section class="statistics">
+    <div class="statistics__title">
+        Первая арена Беларуси,
+Принявшая матчи лиги чемпионов (2008)
+</div>
+        <div class="statistics__allrows statistics__row1 statistics__pc">
+            <div class="statistics__allcolumns statistics__row1-allcolumns">
+                <div class="statistics__allcolumns-alltitles">
+                    22 246 <span class="gray">зрителей</span>
+                </div>
+                <div class="statistics__allcolumns-text statistics__allcolumns-text-column1">Вместимость стадиона</div>
+            </div>
+            <div class="statistics__allcolumns  statistics__row1-allcolumns">
+                <div class="statistics__allcolumns-alltitles">
+                    47 015 <span class="gray">м2</span>
+                </div>
+                <div class="statistics__allcolumns-text">Общая площадь</div>
+            </div>
+            <div class="statistics__allcolumns statistics__allcolumns-column3 statistics__row1-allcolumns">
+                <div class="statistics__allcolumns-alltitles">
+                    40
+                </div>
+                <div class="statistics__allcolumns-text">VIP-лож</div>
+            </div>
+        </div>
+
+        <div class="statistics__allrows statistics__pc">
+            <div class="statistics__allcolumns">
+                <div class="statistics__allcolumns-alltitles">
+                    233
+                </div>
+                <div class="statistics__allcolumns-text statistics__allcolumns-text-column1">Парковочных места</div>
+            </div>
+            <div class="statistics__allcolumns">
+                <div class="statistics__allcolumns-alltitles">
+                    350 
+                </div>
+                <div class="statistics__allcolumns-text">Прожекторов</div>
+            </div>
+            <div class="statistics__allcolumns statistics__allcolumns-column3">
+                <div class="statistics__allcolumns-alltitles">
+                    13
+                </div>
+                <div class="statistics__allcolumns-text">Беговых дорожек</div>
+            </div>
+        </div>  
+
+        <div class="statistics__allrows statistics__pc">
+            <div class="statistics__allcolumns">
+                <div class="statistics__allcolumns-alltitles">
+                    105х68 м
+                </div>
+                <div class="statistics__allcolumns-text statistics__allcolumns-text-column1">Размер поля</div>
+            </div>
+            <div class="statistics__allcolumns">
+                <div class="statistics__allcolumns-alltitles">
+                    75%
+                </div>
+                <div class="statistics__allcolumns-text">Защита трибун козырьком</div>
+            </div>
+            <div class="statistics__allcolumns statistics__allcolumns-column3">
+                <div class="statistics__allcolumns-alltitles">
+                    30
+                </div>
+                <div class="statistics__allcolumns-text">Количество секторов</div>
+            </div>
+        </div>  
+
+        <div class="statistics__allrows statistics__pc">
+            <div class="statistics__allcolumns statistics__allcolumns-last">
+                <div class="statistics__allcolumns-alltitles">
+                    9
+                </div>
+                <div class="statistics__allcolumns-text statistics__allcolumns-text-column1">
+                    Количество беговых дорожек в чаше стадиона</div>
+            </div>
+            <div class="statistics__allcolumns statistics__allcolumns-last">
+                <div class="statistics__allcolumns-alltitles">
+                    135 мест
+                </div>
+                <div class="statistics__allcolumns-text">Крытый паркинг</div>
+            </div>
+            <div class="statistics__allcolumns statistics__allcolumns-column3 statistics__allcolumns-last">
+                <div class="statistics__allcolumns-alltitles">
+                    98 мест
+                </div>
+                <div class="statistics__allcolumns-text">Открытый паркинг</div>
+            </div>
+        </div>  
+
+
+        <div class="statistics__allrows statistics__mobile">
+            <div class="statistics__allcolumns statistics__allcolumns-first">
+                <div class="statistics__allcolumns-alltitles">
+                    22 246 <span class="gray">зрителей</span>
+                </div>
+                <div class="statistics__allcolumns-text statistics__allcolumns-text-column1">Вместимость стадиона</div>
+            </div>
+            <div class="statistics__allcolumns statistics__allcolumns-first">
+                <div class="statistics__allcolumns-alltitles">
+                    47 015 <span class="gray">м2</span>
+                </div>
+                <div class="statistics__allcolumns-text">Общая площадь</div>
+            </div>
+        </div>  
+        
+        <div class="statistics__allrows statistics__mobile">
+            <div class="statistics__allcolumns">
+                <div class="statistics__allcolumns-alltitles">
+                    40
+                </div>
+                <div class="statistics__allcolumns-text statistics__allcolumns-text-column1">VIP-лож</div>
+            </div>
+            <div class="statistics__allcolumns">
+                <div class="statistics__allcolumns-alltitles">
+                    233
+                </div>
+                <div class="statistics__allcolumns-text">Парковочных места</div>
+            </div>
+        </div> 
+
+        <div class="statistics__allrows statistics__mobile">
+            <div class="statistics__allcolumns">
+                <div class="statistics__allcolumns-alltitles">
+                    350
+                </div>
+                <div class="statistics__allcolumns-text statistics__allcolumns-text-column1">Прожекторов</div>
+            </div>
+            <div class="statistics__allcolumns">
+                <div class="statistics__allcolumns-alltitles">
+                    13
+                </div>
+                <div class="statistics__allcolumns-text">Беговых дорожек</div>
+            </div>
+        </div>  
+        
+        <div class="statistics__allrows statistics__mobile">
+            <div class="statistics__allcolumns">
+                <div class="statistics__allcolumns-alltitles">
+                    105х68 м
+                </div>
+                <div class="statistics__allcolumns-text statistics__allcolumns-text-column1">Размер поля</div>
+            </div>
+            <div class="statistics__allcolumns">
+                <div class="statistics__allcolumns-alltitles">
+                    75%
+                </div>
+                <div class="statistics__allcolumns-text">Защита трибун козырьком</div>
+            </div>
+        </div> 
+
+        <div class="statistics__allrows statistics__mobile">
+            <div class="statistics__allcolumns">
+                <div class="statistics__allcolumns-alltitles">
+                    30
+                </div>
+                <div class="statistics__allcolumns-text statistics__allcolumns-text-column1">Количество секторов</div>
+            </div>
+            <div class="statistics__allcolumns">
+                <div class="statistics__allcolumns-alltitles">
+                    9
+                </div>
+                <div class="statistics__allcolumns-text">Количество беговых дорожек
+                    в чаше стадиона</div>
+            </div>
+        </div>  
+        
+        <div class="statistics__allrows statistics__mobile">
+            <div class="statistics__allcolumns statistics__allcolumns-last">
+                <div class="statistics__allcolumns-alltitles">
+                    135 мест
+                </div>
+                <div class="statistics__allcolumns-text statistics__allcolumns-text-column1">Крытый паркинг</div>
+            </div>
+            <div class="statistics__allcolumns statistics__allcolumns-last">
+                <div class="statistics__allcolumns-alltitles">
+                    98 мест
+                </div>
+                <div class="statistics__allcolumns-text">Открытый паркинг</div>
+            </div>
+        </div> 
+</section>
+
+</div>
+<footer class = "footer">
+    <div class="footer__container">
+        <nav class="footer__nav">
+        
+            <ul class="footer__nav-list1">
+                <li><a href="#">Карта сайта</a></li>
+                <li><a href="#">Обратная связь</a></li>                    
+            </ul>
+            <ul class="footer__nav-list2">
+                <li class="footer__nav-list2-title">Следите за нами в соц.сетях</li>
+
+                <li class="footer__nav-list2-socials">
+                <a href="#"><img src="{% static 'img/icons/instagram-paint.svg' %}" alt="instagram"></a>
+                <a href="#"><img src="{% static 'img/icons/facebook-paint.svg' %}" alt="facebook"></a>
+                <a href="#"><img src="{% static 'img/icons/vk-paint.svg' %}" alt="vk"></a>
+                <a href="#"><img src="{% static 'img/icons/youtube-paint.svg' %}" alt="youtube"></a>
+                    
+                </li>
+            </ul>
+
+            <div class="footer__nav-mailing">
+                <div class="footer__nav-mailing-title">Подписывайтесь на email-рассылку</div>
+                <form action="#" method="#" class="footer__nav-mailing-form">
+                    <input type="text" placeholder="sportsmen228@gmail.com">
+                    <input class="footer__nav-mailing-form-subscribe" type="submit" value="Подписаться">
+                </form>
+            </div>
+        </nav>
+        <div class="footer__rights">
+             <span class="dinamic_year">
+                 <script>
+                 'use strict'
+            let dynamicYear = document.querySelector('.dinamic_year');
+            let date = new Date();
+            let nowYear = date.getFullYear();
+            dynamicYear.innerHTML = nowYear;
+                </script>
+            </span> &copy; Все права защищены
+            </div>            
+    </div>
+</footer>
+
+  <script src="{% static 'js/header.js' %}"></script>
+   <script src="{% static 'js/dinamo_contacts.js' %}"></script>
+</body>
+</html>

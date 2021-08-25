@@ -1,0 +1,392 @@
+<!doctype html>
+{% load static %}
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="{% static 'css/null_for_templates.css' %}">
+    <link rel="stylesheet" href="{% static 'css/news.css' %}">
+    <title>Новости</title>
+</head>
+<body>
+    <div class="wrapper">
+
+        {% include 'header.html' %}
+
+        <div class="wrapp">
+            <div class="wrapp_container-news">
+                <div>
+                    <a href="#" class="header_a">
+                        Главная
+                    </a>
+                    <a href="#" class="header_a">
+                        > Новости
+                    </a>
+                    <h3 class="title">
+                        <span> Узнавайте первыми о </span> самых интересных событиях стадиона
+                    </h3>
+                </div>
+                
+                <div class="search">
+                <form action="#" method="#" class="search_news-form">
+                    <input type="text" placeholder="Поиск по названию статьи . . ." name="news_search" class="search_input_1">
+                    
+                        <button class="search_input_2" type="button">
+                            <img src="{% static 'img/icons/Union.pn' %}g" alt="svg">
+                            <div class="search_input_2-text">Найти</div>
+                        </button>
+                        <div class="search_input_3">
+                            <a href="#" class="search_input_3_text">
+                                Сортировка 
+                            </a>
+                            <span class="link__arrow" id="media"></span>
+                    </div> 
+                    <div class="menu-extra__news">
+                            <a href="#" class="menu-extra__link">
+                                Сначала новые
+                            </a>
+                            <a href="#" class="menu-extra__link">
+                                Сначала старые
+                            </a>
+                            <a href="#" class="menu-extra__link">
+                                Сначала популярные
+                            </a>
+                        </div>  
+                </form>
+                </div>
+                
+                <div class="news">
+                    <ul class="news__list">
+                        <li class="news__wrap" >
+                            <ul>
+                                <li class="news__card">
+                                    <div class="card_img">
+                                        <img src="{% static 'img/image_0.png' %}" alt="картинка0">
+                                    </div>
+                                    <p class="card_date">18 апреля 2021</p>
+                                    <p class="card_text">
+                                        Минское «Динамо» уступило «Гомелю» в чемпионате Беларуси по футболу
+                                    </p>
+                                    <p class="card_time">Время чтения: 5 минут</p>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="news__wrap" >
+                            <ul>
+                                <li class="news__card">
+                                    <div class="card_img">
+                                        <img src="{% static 'img/image_1.png' %}" alt="картинка1" >
+                                    </div>
+                                    <p class="card_date">18 апреля 2021</p>
+                                    <p class="card_text">
+                                        На стадионе «Динамо»играют в шахматы
+                                    </p>
+                                    <p class="card_time">Время чтения: 3 минуты</p>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="news__wrap" >
+                            <ul>
+                                <li class="news__card">
+                                    <div class="card_img">
+                                        <img src="{% static 'img/image_2.png' %}" alt="картинка2" >
+                                    </div>
+                                    <p class="card_date">17 апреля 2021</p>
+                                    <p class="card_text">
+                                        Стадион «Динамо» глазами 360tour.by
+                                    </p>
+                                    <p class="card_time">Время чтения: 4 минуты</p>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="news__wrap" >
+                            <ul>
+                                <li class="news__card">
+                                    <div class="card_img">
+                                        <img src="{% static 'img/image_3.png' %}" alt="картинка3">
+                                    </div>
+                                    <p class="card_date">17 марта 2021</p>
+                                    <p class="card_text">
+                                        Стадион «Динамо» глазами 360tour.by
+                                    </p>
+                                    <p class="card_time">Время чтения: 2 минуты</p>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="news__wrap" >
+                            <ul>
+                                <li class="news__card">
+                                    <div class="card_img">
+                                        <img src="{% static 'img/image_3.png' %}" alt="картинка3">
+                                    </div>
+                                    <p class="card_date">17 марта 2021</p>
+                                    <p class="card_text">
+                                        Стадион «Динамо» глазами 360tour.by
+                                    </p>
+                                    <p class="card_time">Время чтения: 2 минуты</p>
+                                </li>
+                            </ul>
+                        </li>
+                        
+                        <li class="news__wrap" >
+                            <ul>
+                                <li class="news__card">
+                                    <div class="card_img">
+                                        <img src="{% static 'img/image_2.png' %}" alt="картинка2" >
+                                    </div>
+                                    <p class="card_date">17 апреля 2021</p>
+                                    <p class="card_text">
+                                        Стадион «Динамо» глазами 360tour.by
+                                    </p>
+                                    <p class="card_time">Время чтения: 4 минуты</p>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="news__wrap" >
+                            <ul>
+                                <li class="news__card">
+                                    <div class="card_img">
+                                        <img src="{% static 'img/image_0.png' %}" alt="картинка0">
+                                    </div>
+                                    <p class="card_date">18 апреля 2021</p>
+                                    <p class="card_text">
+                                        Минское «Динамо» уступило «Гомелю» в чемпионате Беларуси по футболу
+                                    </p>
+                                    <p class="card_time">Время чтения: 5 минут</p>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="news__wrap" >
+                            <ul>
+                                <li class="news__card">
+                                    <div class="card_img">
+                                        <img src="{% static 'img/image_1.png' %}" alt="картинка1" >
+                                    </div>
+                                    <p class="card_date">18 апреля 2021</p>
+                                    <p class="card_text">
+                                        На стадионе «Динамо»играют в шахматы
+                                    </p>
+                                    <p class="card_time">Время чтения: 3 минуты</p>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="news__wrap" >
+                            <ul>
+                                <li class="news__card">
+                                    <div class="card_img">
+                                        <img src="{% static 'img/image_2.png' %}" alt="картинка2" >
+                                    </div>
+                                    <p class="card_date">17 апреля 2021</p>
+                                    <p class="card_text">
+                                        Стадион «Динамо» глазами 360tour.by
+                                    </p>
+                                    <p class="card_time">Время чтения: 4 минуты</p>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="news__wrap" >
+                            <ul>
+                                <li class="news__card">
+                                    <div class="card_img">
+                                        <img src="{% static 'img/image_1.png' %}" alt="картинка1" >
+                                    </div>
+                                    <p class="card_date">18 апреля 2021</p>
+                                    <p class="card_text">
+                                        На стадионе «Динамо»играют в шахматы
+                                    </p>
+                                    <p class="card_time">Время чтения: 3 минуты</p>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="news__wrap" >
+                            <ul>
+                                <li class="news__card">
+                                    <div class="card_img">
+                                        <img src="{% static 'img/image_3.png' %}" alt="картинка3">
+                                    </div>
+                                    <p class="card_date">17 марта 2021</p>
+                                    <p class="card_text">
+                                        Стадион «Динамо» глазами 360tour.by
+                                    </p>
+                                    <p class="card_time">Время чтения: 2 минуты</p>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="news__wrap" >
+                            <ul>
+                                <li class="news__card">
+                                    <div class="card_img">
+                                        <img src="{% static 'img/image_0.png' %}" alt="картинка0">
+                                    </div>
+                                    <p class="card_date">18 апреля 2021</p>
+                                    <p class="card_text">
+                                        Минское «Динамо» уступило «Гомелю» в чемпионате Беларуси по футболу
+                                    </p>
+                                    <p class="card_time">Время чтения: 5 минут</p>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="news__wrap" >
+                            <ul>
+                                <li class="news__card">
+                                    <div class="card_img">
+                                        <img src="{% static 'img/image_3.png' %}" alt="картинка3">
+                                    </div>
+                                    <p class="card_date">17 марта 2021</p>
+                                    <p class="card_text">
+                                        Стадион «Динамо» глазами 360tour.by
+                                    </p>
+                                    <p class="card_time">Время чтения: 2 минуты</p>
+                                </li>
+                            </ul>
+                        </li>
+                            
+                        <li class="news__wrap" >
+                            <ul>
+                                <li class="news__card">
+                                    <div class="card_img">
+                                        <img src="{% static 'img/image_0.png' %}" alt="картинка0">
+                                    </div>
+                                    <p class="card_date">18 апреля 2021</p>
+                                    <p class="card_text">
+                                        Минское «Динамо» уступило «Гомелю» в чемпионате Беларуси по футболу
+                                    </p>
+                                    <p class="card_time">Время чтения: 5 минут</p>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="news__wrap" >
+                            <ul>
+                                <li class="news__card">
+                                    <div class="card_img">
+                                        <img src="{% static 'img/image_1.png' %}" alt="картинка1" >
+                                    </div>
+                                    <p class="card_date">18 апреля 2021</p>
+                                    <p class="card_text">
+                                        На стадионе «Динамо»играют в шахматы
+                                    </p>
+                                    <p class="card_time">Время чтения: 3 минуты</p>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="news__wrap" >
+                            <ul>
+                                <li class="news__card">
+                                    <div class="card_img">
+                                        <img src="{% static 'img/image_2.png' %}" alt="картинка2" >
+                                    </div>
+                                    <p class="card_date">17 апреля 2021</p>
+                                    <p class="card_text">
+                                        Стадион «Динамо» глазами 360tour.by
+                                    </p>
+                                    <p class="card_time">Время чтения: 4 минуты</p>
+                                </li>
+                            </ul>
+                        </li>
+                        
+                    </ul> 
+                </div>
+                <div class="select_page">
+                    <div class="left_select">                       
+                            <a href="#" class="button_next_page text_button_next_page ">
+                                <div class="text_in_button">
+                                    Следующая страница
+                                </div>
+                                <div>
+                                    <img src="{% static 'img/Group 1024.svg' %}">
+                                </div>
+                            </a>
+                    </div>
+                    <div class="right_select">
+                        <div class="block_left">
+                            <p>Страница</p>
+                            <div>
+                                <input type="text" class="imput" >
+                            </div>
+                                <p>из 34</p>
+                        </div>
+                        <div class="block_right">
+                            <div class="str_num_min">
+                                <a href="#" class="button_prev">
+                                    <img src="{% static 'img/icons/Vector_min.svg' %}">
+                                </a>
+                            </div>
+                        
+                            <div class="str_num_max">
+                                <a href="#" class="button_next">
+                                <img src="{% static 'img/icons/Vector_max.svg' %}">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        {% include 'container_media.html' %}
+
+
+
+
+         <footer class = "footer">
+        <div class="footer__container">
+            <nav class="footer__nav">
+            
+                <ul class="footer__nav-list1">
+                    <li><a href="#">Карта сайта</a></li>
+                    <li><a href="#">Обратная связь</a></li>                    
+                </ul>
+                <ul class="footer__nav-list2">
+                    <li class="footer__nav-list2-title">Следите за нами в соц.сетях</li>
+
+                    <li class="footer__nav-list2-socials">
+                    <a href="#"><img src="{% static 'img/icons/instagram-paint.svg' %}" alt="instagram"></a>
+                    <a href="#"><img src="{% static 'img/icons/facebook-paint.svg' %}" alt="facebook"></a>
+                    <a href="#"><img src="{% static 'img/icons/vk-paint.svg' %}" alt="vk"></a>
+                    <a href="#"><img src="{% static 'img/icons/youtube-paint.svg' %}" alt="youtube"></a>
+                        
+                    </li>
+                </ul>
+    
+                <section class="footer__nav-mailing">
+                    <div class="footer__nav-mailing-title">Подписывайтесь на email-рассылку</div>
+                    <form action="#" method="#" class="footer__nav-mailing-form">
+                        <input type="text" placeholder="sportsmen228@gmail.com">
+                        <input class="footer__nav-mailing-form-subscribe" type="submit" value="Подписаться">
+                    </form>
+                </section>
+            </nav>
+            <section class="footer__rights">
+                 <span class="dinamic_year">
+                     <script>
+                     'use strict'
+                let dynamicYear = document.querySelector('.dinamic_year');
+                let date = new Date();
+                let nowYear = date.getFullYear();
+                dynamicYear.innerHTML = nowYear;
+                    </script>
+                </span> &copy; Все права защищены
+                </section>            
+        </div>
+    </footer>
+</div>
+<script src="{% static 'js/header.js' %}"></script>
+<script src="{% static 'js/show-media.js' %}"></script>
+<script src="{% static 'js/news_slider.js' %}"></script>
+
+</body>
+</html>

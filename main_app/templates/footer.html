@@ -1,0 +1,48 @@
+{% load static %}
+<footer>
+    <div class="container">
+        <div class="footer">
+            <nav class="footer__nav">
+                <a href="#" class="footer__link footer__text">
+                    Карта сайта
+                </a>
+                <a href="#" class="footer__link footer__text">
+                    Обратная связь
+                </a>
+            </nav>
+            <div class="footer__social">
+                <p class="footer__social-title footer__text">
+                    Следите за нами в соц.сетях
+                </p>
+                <div class="footer__social-block">
+                    <a href="#" class="social-block__link">
+                        <img src="{% static 'img/footer/instagramm.svg' %}" alt="">
+                    </a>
+                    <a href="#" class="social-block__link">
+                        <img src="{% static 'img/footer/facebook.svg' %}" alt="">
+                    </a>
+                    <a href="#" class="social-block__link">
+                        <img src="{% static 'img/footer/vk.svg' %}" alt="">
+                    </a>
+                    <a href="#" class="social-block__link">
+                        <img src="{% static 'img/footer/youtube.svg' %}" alt="">
+                    </a>
+                </div>
+            </div>
+            <form action="#" class="footer__form">
+                <p class="footer__form-title footer__text">
+                    Подписывайтесь на email-рассылку
+                </p>
+                <div class="footer__form-block">
+                    <input type="text" class="form-block__input" placeholder="sportsmen228@gmail.com">
+                    <button class="form-block__button footer__text">
+                        Подписаться
+                    </button>
+                </div>
+            </form>
+        </div>
+        <p class="footer__subtitle">
+            2021 © Все права защищены
+        </p>
+    </div>
+</footer>

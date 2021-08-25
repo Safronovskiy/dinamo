@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+{% load static %}
+
+    {% block css %}
+        <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    {% endblock css %}
+
+    {% block title %}<title>Главная</title>{% endblock title %}
+
+    {% block header %}
+        {% include 'header.html' %}
+    {% endblock header%}
+
+
+    <div class="show"></div>
+    <main>
+        {% block content %}
+            {% include 'container_main.html' %}
+            {% include 'container_news.html' %}
+            {% include 'container_service.html' %}
+            {% include 'container_partners.html' %}
+            {% include 'container_number.html' %}
+            {% include 'container_media.html' %}
+            {% include 'container_payment.html' %}
+        {% endblock content %}
+     </main>
+
+    {% block footer %}
+        {% include 'footer.html' %}
+    {% endblock footer%}
+
+
+    {% block js %}
+    <script src="{% static 'js/header.js' %}"></script>
+    <script src="{% static 'js/news_slider.js' %}"></script>
+    <script src="{% static 'js/show-media.js' %}"></script>
+    {% endblock js %}

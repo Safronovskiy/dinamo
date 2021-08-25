@@ -1,0 +1,89 @@
+/* @font-face {
+    font-family: Roboto Condensed; 
+    src: url(../fonts/RobotoCondensed/RobotoCondensed-Bold.ttf); 
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: Roboto Condensed; 
+    src: url(../fonts/RobotoCondensed/RobotoCondensed-BoldItalic.ttf); 
+    font-weight: bold;
+    font-style: italic;
+}
+@font-face {
+    font-family: Roboto Condensed; 
+    src: url(../fonts/RobotoCondensed/RobotoCondensed-Regular.ttf); 
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: Roboto; 
+    src: url(../fonts/Roboto/Roboto-Regular.ttf); 
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: Roboto; 
+    src: url(../fonts/Roboto/Roboto-Medium.ttf);
+    font-weight: 500;
+    font-style: normal;
+} */
+
+/*Обнуление*/
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+footer,header,aside{display: block;}
+
+html,body{
+	min-height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+    font-size: 16px;
+    background: #FDFCFB;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+
+
+input[type="text"], input[type="tel"], input[type="email"], input[type="password"] {
+  border: 1px solid #A09999;
+  box-sizing: border-box;
+  border-radius: 2px;
+}
+input[type="text"]:hover, input[type="tel"]:hover, input[type="email"]:hover, input[type="password"]:hover {
+  border: 1px solid #140605;
+}
+input[type="text"]:focus, input[type="tel"]:focus, input[type="email"]:focus, input[type="password"]:focus {
+  border: 3px solid #C89555;
+}
+input[type="text"]:disabled, input[type="tel"]:disabled, input[type="email"]:disabled, input[type="password"]:disabled {
+  background: #E2DFDE;
+  border: 1px solid #A09999;
+}
+input[type="text"]:required, input[type="tel"]:required, input[type="email"]:required, input[type="password"]:required {
+  border: 3px solid #A23228;
+}

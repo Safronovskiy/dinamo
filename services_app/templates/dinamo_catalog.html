@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Каталог услуг</title>
+    <link rel="stylesheet" href="{% static 'css/null_for_templates.css' %}">
+    <link rel="stylesheet" href="{% static 'css/dinamo_catalog.css' %}">
+</head>
+<body>
+
+<div class="wrapper">
+
+{% include 'header.html' %}
+
+<div class="wrapper1">
+    <section class="window-box hidden">
+        <div class="window" id="modal_window">
+            <div class="close-box"><div class="close"></div></div>
+            <h2 class="window__title"><span class="gray">Услуга</span> добавлена в корзину</h2>
+            <div class="window__header">
+                <div class="window__header-main">
+                    <div class="window__header-main-image">
+                        <img src="{% static 'img/food.png' %}" alt="Png">
+                        <div class="window__header-main-image-grad"></div>
+                    </div>
+                    <div class="window__header-main-title">
+                        Организация питания:
+                        обед, ужин, банкет, фуршет
+                    </div>
+                </div>
+                <div class="window__header-buttons">
+                    <button type="button" class="window__header-buttons-arrange">Перейти к оформлению</button>
+                    <button type="button" class="window__header-buttons-сontinue">Продолжить покупки</button>
+                </div>
+            </div>
+        
+            <div class="window__strip"></div>
+        
+            <div class="window__cards container">
+                <div class="window__cards-title">С этой услугой заказывают:</div>
+                <div class="window__cards-item">
+                    <div class="window__cards-item-image img">
+                        <img src="{% static 'img/shooting.png' %}" alt="png">
+                        <div class="window__cards-item-image-grad"></div>            
+                    </div>
+                    <div class="window__cards-item-body">
+                        <div class="window__cards-item-title">Тир</div>
+        
+                        <div class="window__cards-item-text">
+                            С другой стороны начало повседневной работы по формированию позиции позволяет оценить значение дальнейших направлений развития.  
+                        </div>
+        
+                        <div class="window__cards-item-buttons">
+                            <button type="button" class="window__cards-item-buttons-add">
+                                <img src="{% static 'img/icons/crawd.png' %}" alt="Icon">
+                                <div class="window__cards-item-buttons-add-text">В корзину</div>
+                            </button>
+                            <button type="button" class="window__cards-item-buttons-more">Подробнее об услуге</button>
+                        </div>
+                    </div>
+                </div>            
+            </div>
+        </div>
+        </section>
+
+        <nav class="navigation">
+            <ul class="navigation__list">
+                <li><a href="#">Главная</a></li>
+                <li><img src="{% static 'img/icons/arrow-nav.svg' %}" alt="svg"></li>
+                <li><a href="#">Услуги</a></li>
+            </ul>
+        </nav>
+
+    <section class="slogan">
+        <h2 class="slogan__main">Выбирайте <span class="gray">отдельную либо</span> комплекс услуг</h2>
+        <p class="slogan__footer">Цена на услуги высчитывается после заполнения необходимых параметров в корзине либо индивидуально по телефону</p>
+    </section>
+</div>
+
+<div class="strip"></div>
+
+<div class="wrapper2">
+    <nav class="nav">
+        <ul class="nav__list">
+            <li class="nav__list-item"><a href="#">VIP-услуги</a></li>
+            <li class="nav__list-item"><a href="#">Корпоративные</a></li>
+            <li class="nav__list-item"><a href="#">Частным лицам</a></li>
+            <li class="nav__list-item"><a href="#">Спорт</a></li>
+            <li class="nav__list-item"><a href="#">Развлечения</a></li>
+        </ul>
+
+        <form class="nav__form" action="#" method="#">
+            <input class="nav__form-search" type="text" placeholder="Введите название услуги . . .">
+            <button class="nav__form-submit" type="button">
+                <img src="{% static 'img/icons/Union.svg' %}" alt="svg">
+                <div class="nav__form-submit-text">Найти</div>
+            </button>
+            
+        </form>
+    </nav>
+
+    <div class="cards">
+        
+        <div class="cards__item">
+            <div class="cards__item-image">
+                <img src="{% static 'img/concerts.png' %}" alt="png">
+                <div class="cards__item-image-grad"></div>                 
+            </div>
+        
+            <div class="cards__item-body">
+                <p class="cards__item-slogan">        
+                        Организация концертов и
+                    спортивных мероприятий
+                    
+                </p>
+
+                <p class="cards__item-description">С другой стороны начало повседневной работы по формированию позиции позволяет оценить значение дальнейших направлений развития.
+                </p>
+
+                <div class="cards__item-footer">
+                    <div class="cards__item-footer-buttons">
+                        <a href="#modal_window" class="cards__item-footer-buttons-add add_basket">
+                        <img src="{% static 'img/icons/crawd.png' %}" class="cards__item-footer-button_add-icon" alt="png">
+                        <div class="cards__item-footer-buttons-add-text">
+                        Добавить в корзину
+                        </div>
+                    </a>
+                    <button type="button" class="cards__item-footer-buttons-more">Подробнее об услуге</button>
+
+                    <div class="cards__item-mobile-cost">
+                        <div class="cards__item-mobile-cost-text"> Цена:</div>
+                        <span class="black">от 500 BYN</span>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <aside class="cards__item-aside">
+                <button type="button" class="cards__item-aside-button">Развлечения</button>
+                <div class="cards__item-aside-cost">
+                    <div class="cards__item-aside-cost-text"> Цена:</div>
+                    <span class="black">от 500 BYN</span>
+                </div>
+            </aside>
+        </div>
+    </div>
+
+    <div class="connection">
+        <div class="connection__aside">
+            <p class="connection__aside-slogan"><span class="gray">Остались</span> вопросы, пожелания. предложения?</p>
+            <p class="connection__aside-text">Мы перезвоним, выслушаем и ответим на все вопросы. Не стесняйтесь, оставляйте номер и мы перезвоним Вам в течение 5 минут </p>
+        </div>
+        <form action="#" method="#" class="connection__form">
+            <div class="connection__form_getname">
+                <p class="connection__form_getname-text">Как Вас зовут?</p>
+                <input type="text" placeholder="Иванов Иван Иванович">
+            </div>
+            <div class="connection__form_getnumber">
+                <p class="connection__form_number-text">Номер</p>
+                <input type="tel">
+            </div>
+            <input class="connection__form-callback" type="submit" value="Перезвонить мне">
+        </form>
+    </div>
+ </div>
+
+    <footer class = "footer">
+        <div class="footer__container">
+            <div class="footer__nav">
+            
+                <ul class="footer__nav-list1">
+                    <li><a href="#">Карта сайта</a></li>
+                    <li><a href="#">Обратная связь</a></li>                    
+                </ul>
+                <ul class="footer__nav-list2">
+                    <li class="footer__nav-list2-title">Следите за нами в соц.сетях</li>
+
+                    <li class="footer__nav-list2-socials">
+                    <a href="#"><img src="{% static 'img/icons/instagram-paint.svg' %}" alt="instagram"></a>
+                    <a href="#"><img src="{% static 'img/icons/facebook-paint.svg' %}" alt="facebook"></a>
+                    <a href="#"><img src="{% static 'img/icons/vk-paint.svg' %}" alt="vk"></a>
+                    <a href="#"><img src="{% static 'img/icons/youtube-paint.svg' %}" alt="youtube"></a>
+                        
+                    </li>
+                </ul>
+    
+                <div class="footer__nav-mailing">
+                    <div class="footer__nav-mailing-title">Подписывайтесь на email-рассылку</div>
+                    <form action="#" method="#" class="footer__nav-mailing-form">
+                        <input type="text" placeholder="sportsmen228@gmail.com">
+                        <input class="footer__nav-mailing-form-subscribe" type="submit" value="Подписаться">
+                    </form>
+                </div>
+            </div>
+            <div class="footer__rights">
+                 <span class="dinamic_year">
+                     <script>
+                     'use strict'
+                let dynamicYear = document.querySelector('.dinamic_year');
+                let date = new Date();
+                let nowYear = date.getFullYear();
+                dynamicYear.innerHTML = nowYear;
+                    </script>
+                </span> &copy; Все права защищены
+                </div>            
+        </div>
+    </footer>
+    </div>
+<script src="{% static 'js/header.js' %}"></script>
+<script src="{% static 'js/dinamo_catalog.js' %}"></script>
+</body>
+</html>

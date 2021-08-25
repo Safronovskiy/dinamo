@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="rus">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="{% static 'css/null_for_templates.css' %}">
+        <link rel="stylesheet" href="{% static 'css/videoalbum-style.css' %}">
+
+        <title>Видеоальбомы</title>
+    </head>
+    <body>
+        <div class="wrapper">
+
+        {% include 'header.html' %}
+
+        <section>
+            <div class="video_album">
+            <div class="container">
+                    <div class="video_navigate">
+                        <p class="header_link">Главная</p>
+                        <img src="{% static 'img/icons/icon-arrow-active-right.svg' %}">
+                        <p class="header_link_hidden1">Медиа</p>
+                        <img src="{% static 'img/icons/icon-arrow-active-right.svg' %}">
+                        <p class="header_link_hidden2">Видеоальбомы</p>
+                    </div>
+                    <div class="video_heading">
+                        <p class="video_heading_text">Видеоальбомы</p>
+                    </div>
+                <div class="video_album_block">
+                    <div class="card_of_video_album">
+                        <div class="first_block">
+                            <div class="card_video"> 
+                                <a class = 'card-link_video' href="{% url 'media:video_details' %}">
+                                    <div class="card_wrap-img_video" style="background: url({% static 'img/album/photo1.png' %});">
+                                        <div class="img-layer_video" >
+                                            <div class="card_wrapp-text_video">
+                                                <span class="text-topRow_video">7 видео</span>
+                                            </div>   
+                                        </div> 
+                                        <div class = 'wrap-icon'>
+                                            <img class = 'test-icon' src="{% static 'img/icons/rent_link_gallery.svg' %}" alt="">
+                                        </div>
+                                    </div>
+                                    
+                                </a>
+                            </div>
+                            <div class="under_text">
+                                <p>Открытие Национального олимпийского стадиона «Динамо»</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card_of_video_album">
+                        <div class="first_block">
+                            <div class="card_video"> 
+                                <a class = 'card-link_video' href="{% url 'media:video_details' %}">
+                                    <div class="card_wrap-img_video" style="background: url({% static 'img/album/photo2.png' %});">
+                                        <div class="img-layer_video" >
+                                            <div class="card_wrapp-text_video">
+                                                <span class="text-topRow_video">1 видео</span>
+                                            </div>   
+                                        </div> 
+                                        <div class = 'wrap-icon'>
+                                            <img class = 'test-icon' src="{% static 'img/icons/rent_link_gallery.svg' %}" alt="">
+                                        </div>
+                                    </div>
+                                    
+                                </a>
+                            </div>
+                            <div class="under_text">
+                                <p>Первые победы на стадионе</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card_of_video_album">
+                        <div class="first_block">
+                            <div class="card_video"> 
+                                <a class = 'card-link_video' href="{% url 'media:video_details' %}">
+                                    <div class="card_wrap-img_video" style="background: url({% static 'img/album/photo3.png' %});">
+                                        <div class="img-layer_video" >
+                                            <div class="card_wrapp-text_video">
+                                                <span class="text-topRow_video">39 видео</span>
+                                            </div>   
+                                        </div> 
+                                        <div class = 'wrap-icon'>
+                                            <img class = 'test-icon' src="{% static 'img/icons/rent_link_gallery.svg' %}" alt="">
+                                        </div>
+                                    </div>
+                                    
+                                </a>
+                            </div>
+                            <div class="under_text">
+                                <p>Интервью</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card_of_video_album">
+                        <div class="first_block">
+                            <div class="card_video"> 
+                                <a class = 'card-link_video' href="{% url 'media:video_details' %}">
+                                    <div class="card_wrap-img_video" style="background: url({% static 'img/album/photo2.png' %});">
+                                        <div class="img-layer_video" >
+                                            <div class="card_wrapp-text_video">
+                                                <span class="text-topRow_video">1 видео</span>
+                                            </div>   
+                                        </div> 
+                                        <div class = 'wrap-icon'>
+                                            <img class = 'test-icon' src="{% static 'img/icons/rent_link_gallery.svg' %}" alt="">
+                                        </div>
+                                    </div>
+                                    
+                                </a>
+                            </div>
+                            <div class="under_text">
+                                <p>Первые победы на стадионе</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card_of_video_album">
+                        <div class="first_block">
+                            <div class="card_video"> 
+                                <a class = 'card-link_video' href="{% url 'media:video_details' %}">
+                                    <div class="card_wrap-img_video" style="background: url({% static 'img/album/photo3.png' %});">
+                                        <div class="img-layer_video" >
+                                            <div class="card_wrapp-text_video">
+                                                <span class="text-topRow_video">39 видео</span>
+                                            </div>   
+                                        </div> 
+                                        <div class = 'wrap-icon'>
+                                            <img class = 'test-icon' src="{% static 'img/icons/rent_link_gallery.svg' %}" alt="">
+                                        </div>
+                                    </div>
+                                    
+                                </a>
+                            </div>
+                            <div class="under_text">
+                                <p>Интервью</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card_of_video_album">
+                        <div class="first_block">
+                            <div class="card_video"> 
+                                <a class = 'card-link_video' href="{% url 'media:video_details' %}">
+                                    <div class="card_wrap-img_video" style="background: url({% static 'img/album/photo1.png' %});">
+                                        <div class="img-layer_video" >
+                                            <div class="card_wrapp-text_video">
+                                                <span class="text-topRow_video">7 видео</span>
+                                            </div>   
+                                        </div> 
+                                        <div class = 'wrap-icon'>
+                                            <img class = 'test-icon' src="{% static 'img/icons/rent_link_gallery.svg' %}" alt="">
+                                        </div>
+                                    </div>
+                                    
+                                </a>
+                            </div>
+                            <div class="under_text">
+                                <p>Открытие Национального олимпийского стадиона «Динамо»</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card_of_video_album">
+                        <div class="first_block">
+                            <div class="card_video"> 
+                                <a class = 'card-link_video' href="#">
+                                    <div class="card_wrap-img_video" style="background: url({% static 'img/album/photo3.png' %});">
+                                        <div class="img-layer_video" >
+                                            <div class="card_wrapp-text_video">
+                                                <span class="text-topRow_video">39 видео</span>
+                                            </div>   
+                                        </div> 
+                                        <div class = 'wrap-icon'>
+                                            <img class = 'test-icon' src="{% static 'img/icons/rent_link_gallery.svg' %}" alt="">
+                                        </div>
+                                    </div>
+                                    
+                                </a>
+                            </div>
+                            <div class="under_text">
+                                <p>Интервью</p>
+                            </div>                            
+                        </div>
+                    </div>  <div class="card_of_video_album">
+                        <div class="first_block">
+                            <div class="card_video"> 
+                                <a class = 'card-link_video' href="#">
+                                    <div class="card_wrap-img_video" style="background: url({% static 'img/album/photo1.png' %});">
+                                        <div class="img-layer_video" >
+                                            <div class="card_wrapp-text_video">
+                                                <span class="text-topRow_video">7 видео</span>
+                                            </div>   
+                                        </div> 
+                                        <div class = 'wrap-icon'>
+                                            <img class = 'test-icon' src="{% static 'img/icons/rent_link_gallery.svg' %}" alt="">
+                                        </div>
+                                    </div>
+                                    
+                                </a>
+                            </div>
+                            <div class="under_text">
+                                <p>Первые победы</p>
+                            </div>
+                        </div>
+                    </div>  <div class="card_of_video_album">
+                        <div class="first_block">
+                            <div class="card_video"> 
+                                <a class = 'card-link_video' href="#">
+                                    <div class="card_wrap-img_video" style="background: url({% static 'img/album/photo2.png' %});">
+                                        <div class="img-layer_video" >
+                                            <div class="card_wrapp-text_video">
+                                                <span class="text-topRow_video">1 видео</span>
+                                            </div>   
+                                        </div> 
+                                        <div class = 'wrap-icon'>
+                                            <img class = 'test-icon' src="{% static 'img/icons/rent_link_gallery.svg' %}" alt="">
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="under_text">
+                                <p>Открытие Национального олимпийского стадиона «Динамо»</p>
+                            </div>
+                        </div>
+                    </div>
+                            
+                </div>  
+                    <div class="button_more">
+                            <a href="#" class="service_link service_link-mobile">
+                                <div class="more">Показать еще</div>
+                            </a>
+                     </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="social">
+                <div class="container">
+                    <div class="head_social">
+                        <div class="title_social_up">
+                            <p class="text_of_title_social_up"><span>Следите за нами в </span> соц.сетях</p>
+                        </div>
+                        <div class="title_social_down">
+                            <p class="text_of_title_social_down">Узнавайте первыми об интересных событиях и акциях!</p>
+                        </div>
+                    </div>
+                    <div class="social_link">
+                        <div class="social_card">
+                            <div class="card"> 
+                                <div class="block_link">
+                                <a class = 'card-link' href="#">
+                                    <div class="card_wrap-img_link">
+                                        <img src="{% static 'img/social_icon_under/back_inst.png' %}">
+                                        <div class="img-layer_link"></div>
+                                        <div class = 'wrap-icon_link'>
+                                            <img class = 'test-icon_link' src="{% static 'img/social_icon_under/instagramm.svg' %}" alt="">
+                                        </div>
+                                    </div>
+                                </a>
+                                </div>
+                            </div>
+                            <div class="card"> 
+                                <div class="block_link">
+                                <a class = 'card-link' href="#">
+                                    <div class="card_wrap-img_link">
+                                        <img src="{% static 'img/social_icon_under/back_facebook.png' %}">
+                                        <div class="img-layer_link"></div>
+                                        <div class = 'wrap-icon_link'>
+                                            <img class = 'test-icon_link' src="{% static 'img/social_icon_under/youtube.svg' %}" alt="">
+                                        </div>
+                                    </div>
+                                   </a>
+                                </div>
+                            </div>
+                            <div class="card"> 
+                                <div class="block_link">
+                                <a class = 'card-link' href="#">
+                                    <div class="card_wrap-img_link">
+                                        <img src="{% static 'img/social_icon_under/back_youtube.png' %}">
+                                        <div class="img-layer_link"></div>
+                                        <div class = 'wrap-icon_link'>
+                                            <img class = 'test-icon_link' src="{% static 'img/social_icon_under/facebook.svg' %}" alt="">
+                                        </div>
+                                    </div>
+                                </a>
+                                </div>
+                            </div>
+                            <div class="card"> 
+                                <div class="block_link">
+                                <a class = 'card-link' href="#">
+                                    <div class="card_wrap-img_link">
+                                        <img src="{% static 'img/social_icon_under/back_vk.png' %}">
+                                        <div class="img-layer_link"></div>
+                                        <div class = 'wrap-icon_link'>
+                                            <img class = 'test-icon_link' src="{% static 'img/social_icon_under/vk.svg' %}" alt="">
+                                        </div>
+                                    </div>
+                                </a>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    
+                    
+                   </div>
+             </div>
+        </section>
+        <footer>
+            <div class="container">
+                <div class="footer">
+                    <nav class="footer__nav">
+                        <a href="#" class="footer__link footer__text">
+                            Карта сайта
+                        </a>
+                        <a href="#" class="footer__link footer__text">
+                            Обратная связь
+                        </a>
+                    </nav>
+                    <div class="footer__social">
+                        <p class="footer__social-title footer__text">
+                            Следите за нами в соц.сетях
+                        </p>
+                        <div class="footer__social-block">
+                            <a href="#" class="social-block__link">
+                                <img src="{% static 'img/footer/instagramm.svg' %}" alt="">
+                            </a>
+                            <a href="#" class="social-block__link">
+                                <img src="{% static 'img/footer/facebook.svg' %}" alt="">
+                            </a>
+                            <a href="#" class="social-block__link">
+                                <img src="{% static 'img/footer/vk.svg'%}" alt="">
+                            </a>
+                            <a href="#" class="social-block__link">
+                                <img src="{% static 'img/footer/youtube.svg' %}" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <form action="#" class="footer__form">
+                        <p class="footer__form-title footer__text">
+                            Подписывайтесь на email-рассылку
+                        </p>
+                        <div class="footer__form-block">
+                            <input type="text" class="form-block__input" placeholder="sportsmen228@gmail.com">
+                            <button class="form-block__button footer__text">
+                                Подписаться
+                            </button>
+                        </div>
+                    </form>
+                </div>
+                <p class="footer__subtitle">
+                    2021 © Все права защищены
+                </p>
+            </div>
+        </footer>
+        </div>
+        <script src="{% static 'js/header.js' %}"></script>
+    </body>
+</html>

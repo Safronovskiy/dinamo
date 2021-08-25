@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Document</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="{% static 'CSS/order_empty.css' %}">
+	</head>
+	<body>
+		<div class="wrap">
+			<div class="logotype">
+				<div class="container">
+					<div class="logo-wrap">
+						<div class="logo__img-wrap">
+							<img class = 'logo__img' src="{% static 'img/logo.svg' %}" alt="logo">
+						</div>
+						<div class="logo__text">
+							<span>Национальный олимпийский</span>
+							<span>стадион динамо</span>
+						</div>
+					</div>
+			</div>
+
+			</div>
+			<main>
+				<div class="description">
+					<div class="container">
+						<div class="description-wrap">
+							<div class="description__order">
+								<p class="order__title"><!--
+								-->В Вашей корзине пусто. Переходите
+									в каталог и выбирайте любую услугу<!--
+							--></p>
+								<div class="order__arrows">
+									<img class = 'arrows-top' src="{% static 'img/rows/topArrow.svg' %}" alt="arrow">
+									<img class = 'arrows-middle' src="{% static 'img/rows/middleArrow.svg' %}" alt="arrow">
+									<img class = 'arrows-bottom' src="{% static 'img/rows/bottomArrow.svg' %}" alt="arrow">
+								</div>
+
+								<div class='order__link-wrap' href="#">
+									<a class = 'order__link' href="{% url 'services:services' %}">В каталог услуг</a>
+								</div>
+							</div>
+							<div class="description__about">
+								<div class="about__card">
+									<div class="card__img-wrap">
+										<img class = 'card__img' src="{% static 'img/building.svg' %}" alt="building">
+									</div>
+									<div class="card__title">
+										Новый современный ремонт
+									</div>
+									<div class="card__text"><!--
+									-->Глобальная реконструкция стадиона
+									 	была в 2018 году<!--
+								--></div>
+								</div>
+								<div class="about__card">
+									<div class="card__img-wrap">
+										<img class = 'card__img' src="{% static 'img/car.svg' %}" alt="car">
+									</div>
+									<div class="card__title"><!--
+									-->Удобное расположение<!--
+								--></div>
+									<div class="card__text"><!--
+									-->Стадион находится в центре города<!--
+								--></div>
+								</div>
+								<div class="about__card">
+									<div class="card__img-wrap">
+										<img class = 'card__img' src="{% static 'img/shedule.svg' %}" alt="shedule">
+									</div>
+									<div class="card__title"><!--
+									-->Масштаб и статус объекта<!--
+								--></div>
+									<div class="card__text"><!--
+									-->22 246 зрителей - вместимость
+										стадиона<!--
+								--></div>
+									<div class="card__text"><!--
+									-->47 015 м2 - вместимость стадиона<!--
+							  --></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</main>
+		</div>
+		<script src="{% static 'JS/index.js' %}"></script>
+	</body>
+</html>

@@ -1,0 +1,317 @@
+{% load static %}
+
+            <header>
+            <div class="header__additional">
+                <div class="additional">
+                    <div class="container">
+                        <div class="additional__body">
+                            <div class="additional__contacts">
+                                <a href="#" class="contacts__telefon">
+                                    +375 17 243 09 11
+                                </a>
+                                <a href="#" class="contacts__email">
+                                    stadion_dinamo@mail.ru
+                                </a>
+                            </div>
+                            <div class="additional__social">
+                                <a href="#" class="social__link">
+                                    <img src="{% static 'img/icons/instagram.svg' %}" alt="Instagram">
+                                </a>
+                                <a href="#" class="social__link">
+                                    <img src="{% static 'img/icons/facebook.svg' %}" alt="Facebook">
+                                </a>
+                                <a href="" class="social__link">
+                                    <img src="{% static 'img/icons/vk.svg' %}" alt="VK">
+                                </a>
+                                <a href="" class="social__link">
+                                    <img src="{% static 'img/icons/youtube.svg' %}" alt="YouTube">
+                                </a>
+                            </div>
+                            <div class="additional__map">
+                                <a href="{% url 'about:about' %}" class="map__link">
+                                    О стадионе
+                                </a>
+                                <a href="{% url 'about:howtoget' %}" class="map__link">
+                                    Как добраться
+                                </a>
+                                <a href="{% url 'about:contacts' %}" class="map__link">
+                                    Контакты
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header">
+                <div class="container">
+                    <div class="header__body">
+                        <div class="header__logo">
+                            <a href="" class="logo__link">
+                                <img src="{% static 'img/dinamo__logo.svg' %}" alt="Dinamo">
+                            </a>
+                            <p class="logo__text">
+                                Национальный олимпийский <br> cтадион динамо
+                            </p>
+                        </div>
+                        <div class="header__burger">
+                            <span></span>
+                        </div>
+                        <div class="menu__container">
+                            <div class="header__map">
+                                <a href="#" class="map__link">
+                                    О стадионе
+                                </a>
+                                <a href="" class="map__link">
+                                    Как добраться
+                                </a>
+                                <a href="#" class="map__link">
+                                    Контакты
+                                </a>
+                            </div>
+                            <nav class="header__menu">
+                                <ul class="header__list">
+                                    <li>
+                                        <a href="{% url 'main:main_page' %}" class="header__link selected">
+                                            Главная
+                                        </a>
+                                    </li>
+                                    <li class="list__item services">
+                                        <div class="item__wrapper">
+                                            <a href="{% url 'services:services' %}" class="header__link">
+                                                Услуги
+                                            </a>
+                                            <span class="link__line"></span>
+                                            <span class="link__arrow" id="services"></span>
+                                        </div>
+                                        <div class="menu-extra__container">
+                                            <div class="menu-extra__block">
+                                                <a href="#" class="menu-extra__link">
+                                                    Организация концертов и спортивных мероприятий
+                                                </a>
+                                                <a href="#" class="menu-extra__link">
+                                                    Организация питания: обед, ужин, банкет, фуршет
+                                                </a>
+                                                <a href="#" class="menu-extra__link">
+                                                    Экскурсионный тур
+                                                </a>
+                                                <a href="#" class="menu-extra__link">
+                                                    Выездная регистрация семейного союза
+                                                </a>
+                                                <a href="#" class="menu-extra__link">
+                                                    VIP-обед или ужин в центре поля
+                                                </a>
+                                                <a href="#" class="menu-extra__link">
+                                                    VIP-ложа (аренда, обслуживание)
+                                                </a>
+                                                <a href="#" class="menu-extra__link">
+                                                    VIP-ложа (аренда, обслуживание)
+                                                </a>
+                                            </div>
+                                            <div class="menu-extra__block">
+                                                <a href="#" class="menu-extra__link">
+                                                    Грандиозная корпоративная вечеринка
+                                                </a>
+                                                <a href="#" class="menu-extra__link">
+                                                    Презентация нового продукта на мультимедийных экранах в чаше стадиона
+                                                </a>
+                                                <a href="#" class="menu-extra__link">
+                                                    Организация бизнес-встреч
+                                                </a>
+                                                <a href="#" class="menu-extra__link">
+                                                    Проведение выставок на главной арене страны
+                                                </a>
+                                                <a href="#" class="menu-extra__link">
+                                                    Аренда помещений
+                                                </a>
+                                                <a href="#" class="menu-extra__link">
+                                                    Хранение шин и велосипедов
+                                                </a>
+                                                <a href="#" class="menu-extra__link">
+                                                    Реклама
+                                                </a>
+                                            </div>
+                                            <div class="menu-extra__block">
+                                                <a href="#" class="menu-extra__link">
+                                                    Паркинг
+                                                </a>
+                                                <a href="#" class="menu-extra__link">
+                                                    Фото и видеосъёмка
+                                                </a>
+                                                <a href="#" class="menu-extra__link">
+                                                    Площадки для игры в футбол, баскетбол, волейбол, настольный и большой теннис
+                                                </a>
+                                                <a href="#" class="menu-extra__link">
+                                                    Тир
+                                                </a>
+                                                <a href="#" class="menu-extra__link">
+                                                    Скалодром
+                                                </a>
+                                                <a href="#" class="menu-extra__link">
+                                                    Коворкинг
+                                                </a>
+                                                <a href="#" class="menu-extra__link">
+                                                    Учебный кабинет
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="menu-mobile__container">
+                                            <div>
+                                                <a href="#" class="menu-extra__link">
+                                                    Организация концертов и спортивных мероприятий
+                                                </a>
+                                                <a href="#" class="menu-extra__link">
+                                                    Организация питания: обед, ужин, банкет, фуршет
+                                                </a>
+                                            </div>
+                                            <div>
+                                                <a href="#" class="menu-extra__link">
+                                                    Экскурсионный тур
+                                                </a>
+                                                <a href="#" class="menu-extra__link">
+                                                    Выездная регистрация семейного союза
+                                                </a>
+                                            </div>
+                                            <div>
+                                                <a href="#" class="menu-extra__link">
+                                                    VIP-обед или ужин в центре поля
+                                                </a>
+                                                <a href="#" class="menu-extra__link">
+                                                    VIP-ложа (аренда, обслуживание)
+                                                </a>
+                                            </div>
+                                            <div>
+                                                <a href="#" class="menu-extra__link">
+                                                    Грандиозная корпоративная вечеринка
+                                                </a>
+                                                <a href="#" class="menu-extra__link">
+                                                    Презентация нового продукта на мультимедийных экранах в чаше стадиона
+                                                </a>
+                                            </div>
+                                            <div>
+                                                <a href="#" class="menu-extra__link">
+                                                    Организация бизнес-встреч
+                                                </a>
+                                                <a href="#" class="menu-extra__link">
+                                                    Проведение выставок на главной арене страны
+                                                </a>
+                                            </div>
+                                            <div>
+                                                <a href="#" class="menu-extra__link">
+                                                    Аренда помещений
+                                                </a>
+                                                <a href="#" class="menu-extra__link">
+                                                    Хранение шин и велосипедов
+                                                </a>
+                                            </div>
+                                            <div>
+                                                <a href="#" class="menu-extra__link">
+                                                    Паркинг
+                                                </a>
+                                                <a href="#" class="menu-extra__link">
+                                                    Фото и видеосъёмка
+                                                </a>
+                                            </div>
+                                            <div>
+                                                <a href="#" class="menu-extra__link">
+                                                    Площадки для игры в футбол, баскетбол, волейбол, настольный и большой теннис
+                                                </a>
+                                                <a href="#" class="menu-extra__link">
+                                                    Тир
+                                                </a>
+                                            </div>
+                                            <div>
+                                                <a href="#" class="menu-extra__link">
+                                                    Скалодром
+                                                </a>
+                                                <a href="#" class="menu-extra__link">
+                                                    Коворкинг
+                                                </a>
+                                            </div>
+                                            <div>
+                                                <a href="#" class="menu-extra__link">
+                                                    Учебный кабинет
+                                                </a>
+                                                <a href="#" class="menu-extra__link">
+                                                    Реклама
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href="{% url 'news:news' %}" class="header__link">
+                                            Новости
+                                        </a>
+                                    </li>
+                                    <li class="list__item media">
+                                        <div class="item__wrapper">
+                                            <a href="#" class="header__link">
+                                                Медиа
+                                            </a>
+                                            <span class="link__line"></span>
+                                            <span class="link__arrow" id="media"></span>
+                                        </div>
+                                        <div class="menu-extra__media">
+                                            <a href="{% url 'media:photo_gallery' %}" class="menu-extra__link">
+                                                Фотоальбомы
+                                            </a>
+                                            <a href="{% url 'media:video_gallery' %}" class="menu-extra__link">
+                                                Видеоальбомы
+                                            </a>
+                                        </div>
+                                        <div class="menu-mobile__block">
+                                            <a href="{% url 'media:photo_gallery' %}" class="menu-extra__link">
+                                                Фотоальбомы
+                                            </a>
+                                            <a href="{% url 'media:video_gallery' %}" class="menu-extra__link">
+                                                Видеоальбомы
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="header__link">
+                                            Магазин
+                                        </a>
+                                    </li>
+                                    <li class="list__item-enter">
+                                        <a href="{% url 'events:events' %}" class="header__link">
+                                            События
+                                        </a>
+                                        <div class="enter__block">
+                                            <div class="enter__item"></div>
+                                            <a href="#" class="header__link">
+                                                Корзина
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href="{% url 'cart:order_creation' %}" class="enter__link"></a>
+                                    </li>
+                                </ul>
+                            </nav>
+                            <div class="header__contacts">
+                                <a href="#" class="contacts__telefon">
+                                    +375 17 243 09 11
+                                </a>
+                                <a href="#" class="contacts__email">
+                                    stadion_dinamo@mail.ru
+                                </a>
+                            </div>
+                            <div class="header__social">
+                                <a href="#" class="social__link">
+                                    <img src="{% static 'img/icons/icon_inst_mobile.svg' %}" alt="Instagram">
+                                </a>
+                                <a href="#" class="social__link">
+                                    <img src="{% static 'img/icons/icon_face_mobile.svg' %}" alt="Facebook">
+                                </a>
+                                <a href="" class="social__link">
+                                    <img src="{% static 'img/icons/icon_vk_mobile.svg' %}" alt="VK">
+                                </a>
+                                <a href="" class="social__link">
+                                    <img src="{% static 'img/icons/icon_YT_mobile.svg' %}" alt="YouTube">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>

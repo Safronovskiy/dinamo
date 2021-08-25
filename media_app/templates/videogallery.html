@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="rus">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="{% static 'css/video-gallery-style.css' %}">
+        <link rel="stylesheet" href="{% static 'css/null_for_templates.css' %}">
+        <link rel="stylesheet" href="{% static 'css/tet.css' %}">
+        <title>Галерея</title>
+    </head>
+    <body>
+        <div class="wrapper">
+
+            {% include 'header.html' %}
+
+        <section>
+            <div class="photo_gallery">
+                    <div class="photo_album_navigate gallery_link">
+                        <p class="header_link gallery">Главная</p>
+                        <img src="{% static 'img/icons/icon-arrow-active-right.svg' %}">
+                        <p class="header_link_hidden1">Медиа</p>
+                        <img src="{% static 'img/icons/icon-arrow-active-right.svg' %}">
+                        <p class="header_link_hidden2">Видеоальбомы</p>
+                    </div>
+                    <div>
+                        <a href="{% url 'media:video_gallery' %}" class="back_link">
+                            <div class="back_link_img">
+                                <img src="{% static 'img/icons/back_link_left.svg' %}">
+                            </div>
+                            <div class="back_link_text">
+                                Вернуться к видеоальбомам
+                            </div>
+                        </a>
+                    </div>
+                    <div class="heading">
+                        <p class="heading_text">Интервью</p>
+                    </div>
+                    
+                </div>
+        </section>
+            <section>
+                <div class="container_block">
+                    <div class="gallery_block">
+                        <div class="gallery_wrap">
+                            <div class="gallery_wrap_left">
+                                <div class="img_gal1" id="bigPict"> 
+                                    <div class="block_link">
+                                        <a class = 'card-link' href="#">
+                                         <div class="card_wrap-img_link">
+                                             <div class="img-layer_link"></div>
+                                             <div class = 'wrap-icon_link'>
+                                                <img class = 'test-icon_link' src="{% static 'img/icons/button_video_play.svg' %}" alt="">
+                                            </div>
+                                          </div>
+                                        </a>
+                                     </div>
+                                </div>
+                                <div class="slider_button">
+                                    <div class="left_button">
+                                       <button class="prev button_left" id="prev"><img src="{% static 'img/icons/left_arrow_button.svg' %}" ></button>
+                                    </div>
+                                    <div class="right_button">
+                                       <button class="next button_right" id="next"><img src="{% static 'img/icons/right_arrow_button.svg' %}"></button>
+                                    </div>
+                                </div>
+                            </div>
+                         
+                            <div class="gallery_wrap_right ">
+                                <div class="wrap_right1 slides">
+                                    <div class="img-wrap">
+                                        <img  class="smallPict">
+                                        <div class = 'wrap-icon_time'>
+                                        <p>2:35</p>
+                                        </div>
+                                    </div>
+                                    <div class="img-wrap">
+                                        <img  class="smallPict selected">
+                                        <div class = 'wrap-icon_time'>
+                                            <p>3:21</p>
+                                            </div>
+                                    </div>
+                                </div>
+                                <div class="wrap_right2">
+                                    <div class="img-wrap">
+                                        <img  class="smallPict ">
+                                        <div class = 'wrap-icon_time'>
+                                            <p>1:32</p>
+                                            </div>
+                                    </div>
+                                    <div class="img-wrap">
+                                        <img  class="smallPict selected">
+                                        <div class = 'wrap-icon_time'>
+                                            <p>25:51</p>
+                                            </div>
+                                    </div>
+                                </div>
+                                <div class="wrap_right1 wrap_top">
+                                    <div class="img-wrap">
+                                        <img  class="smallPict ">
+                                        <div class = 'wrap-icon_time'>
+                                            <p>13:42</p>
+                                            </div>
+                                    </div>
+                                    <div class="img-wrap"> 
+                                        <img  class="smallPict selected">
+                                        <div class = 'wrap-icon_time'>
+                                            <p>2:35</p>
+                                            </div>
+                                    </div>
+                                </div>
+                                <div class="wrap_right2">
+                                    <div class="img-wrap">
+                                        <img  class="smallPict ">
+                                        <div class = 'wrap-icon_time'>
+                                            <p>3:21</p>
+                                            </div>
+                                    </div>
+                                    <div class="img-wrap">
+                                        <img  class="smallPict selected">
+                                        <div class = 'wrap-icon_time'>
+                                            <p>1:32</p>
+                                            </div>
+                                    </div>
+                                </div>
+                                <div class="wrap_right1 wrap_top">
+                                    <div class="img-wrap">
+                                        <img  class="smallPict ">
+                                        <div class = 'wrap-icon_time'>
+                                            <p>25:51</p>
+                                            </div>
+                                    </div>
+                                    <div class="img-wrap">
+                                        <img  class="smallPict selected">
+                                        <div class = 'wrap-icon_time'>
+                                            <p>13:42</p>
+                                            </div>
+                                    </div>
+                                </div>
+                                <div class="wrap_right2">
+                                    <div class="img-wrap">
+                                        <img  class="smallPict ">
+                                        <div class = 'wrap-icon_time'>
+                                            <p>2:35</p>
+                                            </div>
+                                    </div>
+                                    <div class="img-wrap">
+                                        <img  class="smallPict selected">
+                                        <div class = 'wrap-icon_time'>
+                                            <p>3:21</p>
+                                            </div>
+                                    </div>
+                                </div>   
+                                
+                            </div>
+                            
+                        </div>
+                        
+                    </div>
+                </div>
+
+            </section>
+            <section>             
+                    <div class="container__service">
+                        <div class="container">
+                            <div class="service">
+                                <h2 class="service__title">
+                                    Наш стадион предлагает<span> широкий спектр услуг</span>
+                                </h2>
+                                <div class="block_hidden"><span>Лучшие </span> услуги<span>  для вас</span></div>
+                                <div class="service__wrapper">
+                                    <div class="service__rent">
+                                        <div class="rent__background">
+                                            <p class="rent__text">
+                                                Аренда помещений
+                                            </p>
+                                            <a href="#" class="rent__link">
+
+                                            </a>
+                                        </div>
+                                        <a href="#" class="service__link">
+                                            Смотреть все услуги
+                                        </a>
+                                    </div>
+                                    <div class="service__commercial">
+                                        <div class="commercial__container">
+                                            <div class="commercial__block">
+                                                <div class="commercial__background">
+                                                    <p class="commercial__text">
+                                                        Реклама
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="commercial__block">
+                                                <div class="commercial__background">
+                                                    <p class="commercial__text">
+                                                        Проведение праздников, банкетов и фуршетов
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="commercial__block">
+                                                <div class="commercial__background">
+                                                    <p class="commercial__text">
+                                                        Организация бизнес-встреч
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="commercial__block">
+                                                <div class="commercial__background">
+                                                    <p class="commercial__text">
+                                                        Площадки для игры в футбол, баскетбол, волейб...
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="commercial__carousel">
+                                            <div class="carousel__left">
+
+                                            </div>
+                                            <div class="carousel__page">
+                                                <div class="page"></div>
+                                                <div class="page"></div>
+                                                <div class="page"></div>
+                                                <div class="page"></div>
+                                            </div>
+                                            <div class="carousel__right">
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="service__link service__link-mobile">
+                                        Смотреть все услуги
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </section>
+            
+            <footer>
+                <div class="container">
+                    <div class="footer">
+                        <nav class="footer__nav">
+                            <a href="#" class="footer__link footer__text">
+                                Карта сайта
+                            </a>
+                            <a href="#" class="footer__link footer__text">
+                                Обратная связь
+                            </a>
+                        </nav>
+                        <div class="footer__social">
+                            <p class="footer__social-title footer__text">
+                                Следите за нами в соц.сетях
+                            </p>
+                            <div class="footer__social-block">
+                                <a href="#" class="social-block__link">
+                                    <img src="{% static 'img/footer/instagramm.svg' %}" alt="">
+                                </a>
+                                <a href="#" class="social-block__link">
+                                    <img src="{% static 'img/footer/facebook.svg' %}" alt="">
+                                </a>
+                                <a href="#" class="social-block__link">
+                                    <img src="{% static 'img/footer/vk.svg' %}" alt="">
+                                </a>
+                                <a href="#" class="social-block__link">
+                                    <img src="{% static 'img/footer/youtube.svg' %}" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <form action="#" class="footer__form">
+                            <p class="footer__form-title footer__text">
+                                Подписывайтесь на email-рассылку
+                            </p>
+                            <div class="footer__form-block">
+                                <input type="text" class="form-block__input" placeholder="sportsmen228@gmail.com">
+                                <button class="form-block__button footer__text">
+                                    Подписаться
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                    <p class="footer__subtitle">
+                        2021 © Все права защищены
+                    </p>
+                </div>
+            </footer>
+        </div>
+        <script src="{% static 'js/change_photo.js' %}"></script>
+        <script src="{% static 'slider.js' %}"></script>
+        <script src="{% static 'js/header.js' %}"></script>
+    </body>
+</html>

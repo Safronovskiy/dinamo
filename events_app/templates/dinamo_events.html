@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>События</title>
+  <link rel="stylesheet" href="{% static 'css/null_for_templates.css' %}">
+  <link rel="stylesheet" href="{% static 'css/dinamo_events.css' %}">
+</head>
+<body>
+    {% include 'header.html' %}
+
+<div class="wrapper">
+    
+    <nav class="navigation">
+        <ul class="navigation__list">
+            <li><a href="#">Главная</a></li>
+            <li><img src="{% static 'img/icons/arrow-nav.svg' %}" alt="svg"></li>
+            <li><a href="#">Контакты</a></li>
+        </ul>
+    </nav>
+
+<section class="slogan">
+  <h1 class="slogan__title">
+    регистрация на мероприятия
+  </h1>
+</section>
+
+<section class="cards">
+
+    <div class="cards__item">
+        <div class="cards__item-body">
+        <div class="cards__item-title">
+            <div class="cards__item-title-text">
+                Открытый чемпионат республики Беларусь по лёгкой атлетике среди ветеранов
+            </div>
+            <div class="cards__item-title-aside">
+                    11 июня — 11 июля <span class="gray">2021</span>
+            </div>
+        </div>
+        <a href="#" class="cards__item-button">регистрация</a>
+    </div>
+        </div>
+    
+</section>
+</div>
+
+<div class="container__partners">
+    <div class="partners">
+        <div class="container">
+            <div class="partners__column column__left">
+                <img src="{% static 'img/partners_column-left.svg' %}" alt="">
+            </div>
+            <div class="partners__column column__right">
+                <img src="{% static 'img/partners_column-right.svg' %}" alt="">
+            </div>
+            <div class="partners__content">
+                <h3 class="partners__title">
+                    Партнёры
+                </h3>
+                <div class="partners__wrapper">
+                    <div class="partners__item">
+                        <img src="{% static 'img/partners_icons/partners_adiddas.svg' %}" alt="">
+                    </div>
+                    <div class="partners__item">
+                        <img src="{% static 'img/partners_icons/partners_cocacola.svg' %}" alt="">
+                    </div>
+                    <div class="partners__item">
+                        <img src="{% static 'img/partners_icons/partners_dove.svg' %}" alt="">
+                    </div>
+                    <div class="partners__item">
+                        <img src="{% static 'img/partners_icons/partners_fila.svg' %}" alt="">
+                    </div>
+                    <div class="partners__item">
+                        <img src="{% static 'img/partners_icons/partners_invidea.svg' %}" alt="">
+                    </div>
+                    <div class="partners__item">
+                        <img src="{% static 'img/partners_icons/partners_nivea.svg' %}" alt="">
+                    </div>
+                    <div class="partners__item">
+                        <img src="{% static 'img/partners_icons/partners_oldspice.svg' %}" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<section>
+    <div class="social">
+        <div class="container">
+            <div class="head_social">
+                <div class="title_social_up">
+                    <p class="text_of_title_social_up"><span>Следите за нами в </span> соц.сетях</p>
+                </div>
+                <div class="title_social_down">
+                    <p class="text_of_title_social_down">Узнавайте первыми об интересных событиях и акциях!</p>
+                </div>
+            </div>
+            <div class="social_link">
+                <div class="social_card">
+                    <div class="card"> 
+                        <div class="block_link">
+                        <a clas = 'card-link' href="#">
+                            <div class="card_wrap-img_link">
+                                <img src="{% static 'img/social_icon_under/back_inst.png' %}">
+                                <div class="img-layer_link"></div>
+                                <div class = 'wrap-icon_link'>
+                                    <img class = 'test-icon_link' src="{% static 'img/social_icon_under/instagramm.svg' %}" alt="">
+                                </div>
+                            </div>
+                        </a>
+                        </div>
+                    </div>
+                    <div class="card"> 
+                        <div class="block_link">
+                        <a clas = 'card-link' href="#">
+                            <div class="card_wrap-img_link">
+                                <img src="{% static 'img/social_icon_under/back_facebook.png' %}">
+                                <div class="img-layer_link"></div>
+                                <div class = 'wrap-icon_link'>
+                                    <img class = 'test-icon_link' src="{% static 'img/social_icon_under/youtube.svg' %}" alt="">
+                                </div>
+                            </div>
+                           </a>
+                        </div>
+                    </div>
+                    <div class="card"> 
+                        <div class="block_link">
+                        <a clas = 'card-link' href="#">
+                            <div class="card_wrap-img_link">
+                                <img src="{% static 'img/social_icon_under/back_youtube.png' %}">
+                                <div class="img-layer_link"></div>
+                                <div class = 'wrap-icon_link'>
+                                    <img class = 'test-icon_link' src="{% static 'img/social_icon_under/facebook.svg' %}" alt="">
+                                </div>
+                            </div>
+                        </a>
+                        </div>
+                    </div>
+                    <div class="card"> 
+                        <div class="block_link">
+                        <a clas = 'card-link' href="#">
+                            <div class="card_wrap-img_link">
+                                <img src="{% static 'img/social_icon_under/back_vk.png' %}">
+                                <div class="img-layer_link"></div>
+                                <div class = 'wrap-icon_link'>
+                                    <img class = 'test-icon_link' src="{% static 'img/social_icon_under/vk.svg' %}" alt="">
+                                </div>
+                            </div>
+                        </a>
+                        </div>
+                    </div>
+                </div>
+            </div>            
+         </div>
+     </div>
+</section>
+
+<footer class = "footer">
+    <div class="footer__container">
+        <nav class="footer__nav">
+        
+            <ul class="footer__nav-list1">
+                <li><a href="#">Карта сайта</a></li>
+                <li><a href="#">Обратная связь</a></li>                    
+            </ul>
+            <ul class="footer__nav-list2">
+                <li class="footer__nav-list2-title">Следите за нами в соц.сетях</li>
+
+                <li class="footer__nav-list2-socials">
+                <a href="#"><img src="{% static 'img/icons/instagram-paint.svg' %}" alt="instagram"></a>
+                <a href="#"><img src="{% static 'img/icons/facebook-paint.svg' %}" alt="facebook"></a>
+                <a href="#"><img src="{% static 'img/icons/vk-paint.svg' %}" alt="vk"></a>
+                <a href="#"><img src="{% static 'img/icons/youtube-paint.svg' %}" alt="youtube"></a>
+                    
+                </li>
+            </ul>
+
+            <div class="footer__nav-mailing">
+                <div class="footer__nav-mailing-title">Подписывайтесь на email-рассылку</div>
+                <form action="#" method="#" class="footer__nav-mailing-form">
+                    <input type="text" placeholder="sportsmen228@gmail.com">
+                    <input class="footer__nav-mailing-form-subscribe" type="submit" value="Подписаться">
+                </form>
+            </div>
+        </nav>
+        <div class="footer__rights">
+             <span class="dinamic_year">
+                 <script>
+                 'use strict'
+            let dynamicYear = document.querySelector('.dinamic_year');
+            let date = new Date();
+            let nowYear = date.getFullYear();
+            dynamicYear.innerHTML = nowYear;
+                </script>
+            </span> &copy; Все права защищены
+            </div>            
+    </div>
+</footer>
+
+  <script src="{% static 'js/header.js' %}"></script>
+   <script src="{% static 'js/dinamo_events.j' %}s"></script>
+</body>
+</html>
