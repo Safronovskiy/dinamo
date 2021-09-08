@@ -12,11 +12,15 @@ def about_contacts_view(request):
 
 
 def howtoget_view(request):
-    return render(request, 'howtoget.html', {})
+    return render(request, 'how_to_get.html', {})
+
+
+def employee_view(request):
+    return render(request, 'employee.html', {})
 
 
 def detail_employees_view(request):
-    return render(request, 'dinamo_employee_details.html', {})
+    return render(request, 'page_employee.html', {})
 
 
 def management_view(request):
@@ -25,10 +29,12 @@ def management_view(request):
 def history_view(request):
     return render(request, 'history.html', {})
 
+def documents_view(request):
+    return render(request, 'documents.html', {})
 
 
-
-
+def vacancy_view(request):
+    return render(request, 'vacancy.html', {})
 
 
 

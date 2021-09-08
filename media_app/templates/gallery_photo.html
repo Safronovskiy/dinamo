@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="rus">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="{% static 'css/gallery-style.css' %}">
+        <link rel="stylesheet" href="{% static 'css/null_for_templates.css' %}">
+        <title>Галерея</title>
+    </head>
+    <body>
+        <div class="wrapper">
+        {% include 'header.html' %}
+        <section>
+            <div class="photo_gallery">
+                    <div class="photo_album_navigate gallery_link">
+                        <a href="{% url 'main:main_page' %}" class="header_link gallery">Главная</a>
+                        <img src="{% static 'img/icons/icon-arrow-active-right.svg' %}">
+                        <a href="{% url 'media:photo_gallery' %}" class="header_link_hidden1">Медиа</a>
+                        <img src="{% static 'img/icons/icon-arrow-active-right.svg' %}">
+                        <a href="." class="header_link_hidden2">Фотоальбомы</a>
+                    </div>
+                    <div>
+                        <a href="{% url 'media:photo_gallery' %}" class="back_link">
+                            <div class="back_link_img">
+                                <img src="{% static 'img/icons/back_link_left.svg' %}">
+                            </div>
+                            <div class="back_link_text">
+                                Вернуться к фотоальбомам
+                            </div>
+                        </a>
+                    </div>
+                    <div class="heading">
+                        <p class="heading_text">Исторические фото</p>
+                    </div>
+                    
+                </div>
+        </section>
+            <section>
+                <div class="container_block">
+                    <div class="gallery_block">
+                        <div class="gallery_wrap">
+                            <div class="gallery_wrap_left ">
+                                <div class=" position-sticky">
+                                <div class="img_gal1 slideBigPict" id="bigPict"></div>
+                                <div class="slider_button">
+                                    <div class="left_button blockBig">
+                                       <button class="prev_big button_left" id="prev"><img src="{% static 'img/icons/left_arrow_button.svg' %}" ></button>
+                                    </div>
+                                    <div class="right_button">
+                                       <button class="next_big button_right" id="next"><img src="{% static 'img/icons/right_arrow_button.svg' %}"></button>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                            <div class="gallery_wrap_right ">
+                                <div class="wrap_right1 slides">
+                                    <div class="img-wrap img-wrap1">
+                                        <div class="layer-top_big"></div>
+                                        <img  class="smallPict  slideBig">
+                                        <div class="layer-bottom_big"></div>
+                                        
+                                    </div>
+                                    <div class="img-wrap">
+                                        <img  class="smallPict selected slideBig">
+                                    </div>
+                                </div>
+                                <div class="wrap_right2">
+                                    <div class="img-wrap">
+                                        <img  class="smallPict slideBig">
+                                    </div>
+                                    <div class="img-wrap">
+                                        <img  class="smallPict selected slideBig">
+                                    </div>
+                                </div>
+                                <div class="wrap_right1 wrap_top">
+                                    <div class="img-wrap">
+                                        <img  class="smallPict slideBig ">
+                                    </div>
+                                    <div class="img-wrap"> 
+                                        <img  class="smallPict selected slideBig">
+                                    </div>
+                                </div>
+                                <div class="wrap_right2">
+                                    <div class="img-wrap">
+                                        <img  class="smallPict slideBig ">
+                                    </div>
+                                    <div class="img-wrap">
+                                        <img  class="smallPict selected slideBig">
+                                    </div>
+                                </div>
+                                <div class="wrap_right1 wrap_top">
+                                    <div class="img-wrap">
+                                        <img  class="smallPict slideBig ">
+                                    </div>
+                                    <div class="img-wrap">
+                                        <img  class="smallPict selected slideBig">
+                                    </div>
+                                </div>
+                                <div class="wrap_right2">
+                                    <div class="img-wrap">
+                                        <img  class="smallPict slideBig">
+                                    </div>
+                                    <div class="img-wrap">
+                                        <img  class="smallPict selected slideBig">
+                                    </div>
+                                </div>   
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+            </section>
+            <section>             
+                    {% include 'container_service.html' %}
+            </section>
+            
+            {% include 'footer.html' %}
+        </div>
+        <script src="{% static 'js/big_slider.js' %}"></script>
+        <script src="{% static 'js/slider_social.js' %}"></script>
+        <script src="{% static 'js/change_photo.js' %}"></script>
+        <script src="{% static 'js/header.js' %}"></script>
+    </body>
+</html>

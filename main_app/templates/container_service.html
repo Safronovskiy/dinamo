@@ -4,24 +4,27 @@
                 <div class="container">
                     <div class="service">
                         <h2 class="service__title">
-                            Лучшие <span>услуги</span> для Вас
+                            <span>Наш стадион предлагает </span> широкий спектр услуг
+
                         </h2>
+                        <div class="block_hidden"><span>Лучшие </span> услуги<span>  для вас</span></div>
                         <div class="service__wrapper">
                             <div class="service__rent">
-                                <div class="rent__background">
+                                <a href="{% url 'services:details' %}" class="rent__background">
                                     <p class="rent__text">
                                         Аренда помещений
                                     </p>
-                                    <a href="#" class="rent__link">
+                                    <div href="#" class="rent__link">
 
-                                    </a>
-                                </div>
+                                    </div>
+                                </a>
                                 <a href="{% url 'services:services' %}" class="service__link">
                                     Смотреть все услуги
                                 </a>
                             </div>
-                            <div class="service__commercial">
-                                <div class="commercial__container">
+                            <div class="service__commercial slider">
+                                <div class="item">
+                                <div class="commercial__container ">
                                     <div class="commercial__block">
                                         <div class="commercial__background">
                                             <p class="commercial__text">
@@ -51,26 +54,123 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="commercial__carousel">
-                                    <div class="carousel__left">
-
+                                </div>
+                                <div class="item">
+                                <div class="commercial__container1">
+                                    <div class="commercial__block">
+                                        <div class="commercial__background">
+                                            <p class="commercial__text">
+                                                Реклама
+                                            </p>
+                                        </div>
                                     </div>
-                                    <div class="carousel__page">
-                                        <div class="page"></div>
-                                        <div class="page"></div>
-                                        <div class="page"></div>
-                                        <div class="page"></div>
+                                    <div class="commercial__block">
+                                        <div class="commercial__background">
+                                            <p class="commercial__text">
+                                                Проведение праздников, банкетов и фуршетов
+                                            </p>
+                                        </div>
                                     </div>
-                                    <div class="carousel__right">
-
+                                    <div class="commercial__block">
+                                        <div class="commercial__background">
+                                            <p class="commercial__text">
+                                                Организация бизнес-встреч
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="commercial__block">
+                                        <div class="commercial__background">
+                                            <p class="commercial__text">
+                                                Площадки для игры в футбол, баскетбол, волейб...
+                                            </p>
+                                        </div>
                                     </div>
                                 </div>
+                                </div>
+                                <div class="item">
+                                    <div class="commercial__container1">
+                                        <div class="commercial__block">
+                                            <div class="commercial__background">
+                                                <p class="commercial__text">
+                                                    Реклама2
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="commercial__block">
+                                            <div class="commercial__background">
+                                                <p class="commercial__text">
+                                                    Проведение праздников, банкетов и фуршетов2
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="commercial__block">
+                                            <div class="commercial__background">
+                                                <p class="commercial__text">
+                                                    Организация бизнес-встреч2
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="commercial__block">
+                                            <div class="commercial__background">
+                                                <p class="commercial__text">
+                                                    Площадки для игры в футбол, баскетбол, волейб...
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="commercial__container1">
+                                            <div class="commercial__block">
+                                                <div class="commercial__background">
+                                                    <p class="commercial__text">
+                                                        Реклама3
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="commercial__block">
+                                                <div class="commercial__background">
+                                                    <p class="commercial__text">
+                                                        Проведение праздников, банкетов и фуршетов3
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="commercial__block">
+                                                <div class="commercial__background">
+                                                    <p class="commercial__text">
+                                                        Организация бизнес-встреч3
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="commercial__block">
+                                                <div class="commercial__background">
+                                                    <p class="commercial__text">
+                                                        Площадки для игры в футбол, баскетбол, волейб...
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="commercial__carousel">
+                                        <a class="carousel__left prev " onclick="minusSlide()">
+
+                                    </a>
+                                        <div class="carousel__page slider-dots">
+                                            <div class="page slider-dots_item " onclick="changeSlider(1)"></div>
+                                            <div class="page slider-dots_item " onclick="changeSlider(2)"></div>
+                                            <div class="page slider-dots_item " onclick="changeSlider(3)"></div>
+                                            <div class="page slider-dots_item " onclick="changeSlider(4)"></div>
+                                        </div>
+                                        <a class="carousel__right next" onclick="plusSlide()" >
+
+                                        </a>
+                                    </div>
                             </div>
-                            <a href="#" class="service__link service__link-mobile">
-                                Смотреть все услуги
-                            </a>
                         </div>
+                        <div class="service__link-mobile-box"><a href="{% url 'services:services' %}" class="service__link service__link-mobile">
+                            Смотреть все услуги
+                        </a></div>
                     </div>
                 </div>
             </div>
-

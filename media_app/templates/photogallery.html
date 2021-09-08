@@ -5,25 +5,24 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="{% static 'css/photoalbum-style.css' %}">
         <link rel="stylesheet" href="{% static 'css/null_for_templates.css' %}">
-        <link rel="stylesheet" href="{% static 'css/photo-style.css' %}">
-
         <title>Фотоальбом</title>
     </head>
     <body>
         <div class="wrapper">
 
-            {% include 'header.html' %}
+        {% include 'header.html' %}
 
         <section>
             <div class="photo_album">
             <div class="container">
                     <div class="photo_album_navigate">
-                        <p class="header_link">Главная</p>
+                        <a href="{% url 'main:main_page' %}" class="header_link">Главная</a>
                         <img src="{% static 'img/icons/icon-arrow-active-right.svg' %}">
-                        <p class="header_link_hidden1">Медиа</p>
+                        <a href="#" class="header_link_hidden1">Медиа</a>
                         <img src="{% static 'img/icons/icon-arrow-active-right.svg' %}">
-                        <p class="header_link_hidden2">Фотоальбомы</p>
+                        <a href="." class="header_link_hidden2">Фотоальбомы</a>
                     </div>
                     <div class="photo_album_heading">
                         <p class="photo_album_heading_text">Фотоальбомы</p>
@@ -31,7 +30,7 @@
                     <div class="card_of_photo_album">
                         <div class="first_block">
                             <div class="card"> 
-                                <a class = 'card-link' href="{% url 'media:photo_detail' %}">
+                                <a clas = 'card-link' href="{% url 'media:photo_album' %}">
                                     <div class="card_wrap-img" style="background: url({% static 'img/album/photo_of_album1.png' %});">
                                         <div class="img-layer" >
                                             <div class="card_wrapp-text">
@@ -48,7 +47,7 @@
                             </div>
 
                             <div class="card card12"> 
-                                <a class = 'card-link' href="#">
+                                <a clas = 'card-link' href="#">
                                     <div class="card_wrap-img" style="background: url({% static 'img/album/photo_of_album2.png' %});">
                                         <div class="img-layer" >
                                             <div class="card_wrapp-text">
@@ -69,7 +68,7 @@
                         <div class="second_block">
                             <div class="card"> 
                                 <div class="second_block1">
-                                <a class = 'card-link' href="#">
+                                <a clas = 'card-link' href="#">
                                     <div class="card_wrap-img1" style="background: url({% static 'img/album/photo_of_album3.png' %});">
                                         <div class="img-layer1" >
                                             <div class="card_wrapp-text">
@@ -86,7 +85,7 @@
                             </div>
                             <div class="card"> 
                                 <div class="second_block2">
-                                <a class = 'card-link' href="#">
+                                <a clas = 'card-link' href="#">
                                     <div class="card_wrap-img1" style="background: url({% static 'img/album/photo_of_album4.png' %});">
                                         <div class="img-layer1" >
                                             <div class="card_wrapp-text">
@@ -103,7 +102,7 @@
                             </div>
                             <div class="card"> 
                                 <div class="second_block3">
-                                <a class = 'card-link' href="#">
+                                <a clas = 'card-link' href="#">
                                     <div class="card_wrap-img1" style="background: url({% static 'img/album/photo_of_album5.png' %});">
                                         <div class="img-layer1" >
                                             <div class="card_wrapp-text">
@@ -122,7 +121,7 @@
 
                         <div class="third_block">
                             <div class="card card12"> 
-                                <a class = 'card-link' href="#">
+                                <a clas = 'card-link' href="#">
                                     <div class="card_wrap-img" style="background: url({% static 'img/album/photo_of_album2.png' %}) ">
                                         <div class="img-layer" >
                                             <div class="card_wrapp-text">
@@ -138,7 +137,7 @@
                                 </a>
                             </div>
                             <div class="card card12"> 
-                                <a class = 'card-link' href="#">
+                                <a clas = 'card-link' href="#">
                                     <div class="card_wrap-img" style="background: url({% static 'img/album/photo_of_album1.png' %})  ">
                                         <div class="img-layer" >
                                             <div class="card_wrapp-text">
@@ -147,7 +146,7 @@
                                             </div>   
                                         </div> 
                                         <div class = 'wrap-icon'>
-                                            <img class='test-icon' src="{% static 'img/icons/rent_link_gallery.svg' %}" alt="">
+                                            <img class = 'test-icon' src="{% static 'img/icons/rent_link_gallery.svg' %}" alt="">
                                         </div>
                                     </div>
                                     
@@ -178,7 +177,7 @@
                         <div class="social_card">
                             <div class="card"> 
                                 <div class="block_link">
-                                <a class = 'card-link' href="#">
+                                <a clas = 'card-link' href="#">
                                     <div class="card_wrap-img_link">
                                         <img src="{% static 'img/social_icon_under/back_inst.png' %}">
                                         <div class="img-layer_link"></div>
@@ -191,7 +190,7 @@
                             </div>
                             <div class="card"> 
                                 <div class="block_link">
-                                <a class = 'card-link' href="#">
+                                <a clas = 'card-link' href="#">
                                     <div class="card_wrap-img_link">
                                         <img src="{% static 'img/social_icon_under/back_facebook.png' %}">
                                         <div class="img-layer_link"></div>
@@ -204,7 +203,7 @@
                             </div>
                             <div class="card"> 
                                 <div class="block_link">
-                                <a class = 'card-link' href="#">
+                                <a clas = 'card-link' href="#">
                                     <div class="card_wrap-img_link">
                                         <img src="{% static 'img/social_icon_under/back_youtube.png' %}">
                                         <div class="img-layer_link"></div>
@@ -217,7 +216,7 @@
                             </div>
                             <div class="card"> 
                                 <div class="block_link">
-                                <a class = 'card-link' href="#">
+                                <a clas = 'card-link' href="#">
                                     <div class="card_wrap-img_link">
                                         <img src="{% static 'img/social_icon_under/back_vk.png' %}">
                                         <div class="img-layer_link"></div>
@@ -237,53 +236,9 @@
                    </div>
              </div>
         </section>
-        <footer>
-            <div class="container">
-                <div class="footer">
-                    <nav class="footer__nav">
-                        <a href="#" class="footer__link footer__text">
-                            Карта сайта
-                        </a>
-                        <a href="#" class="footer__link footer__text">
-                            Обратная связь
-                        </a>
-                    </nav>
-                    <div class="footer__social">
-                        <p class="footer__social-title footer__text">
-                            Следите за нами в соц.сетях
-                        </p>
-                        <div class="footer__social-block">
-                            <a href="#" class="social-block__link">
-                                <img src="{% static 'img/footer/instagramm.svg' %}" alt="">
-                            </a>
-                            <a href="#" class="social-block__link">
-                                <img src="{% static 'img/footer/facebook.svg' %}" alt="">
-                            </a>
-                            <a href="#" class="social-block__link">
-                                <img src="{% static 'img/footer/vk.svg' %}" alt="">
-                            </a>
-                            <a href="#" class="social-block__link">
-                                <img src="{% static 'img/footer/youtube.svg' %}" alt="">
-                            </a>
-                        </div>
-                    </div>
-                    <form action="#" class="footer__form">
-                        <p class="footer__form-title footer__text">
-                            Подписывайтесь на email-рассылку
-                        </p>
-                        <div class="footer__form-block">
-                            <input type="text" class="form-block__input" placeholder="sportsmen228@gmail.com">
-                            <button class="form-block__button footer__text">
-                                Подписаться
-                            </button>
-                        </div>
-                    </form>
-                </div>
-                <p class="footer__subtitle">
-                    2021 © Все права защищены
-                </p>
-            </div>
-        </footer>
+
+       {% include 'footer.html' %}
+
         </div>
         <script src="{% static 'js/header.js' %}"></script>
     </body>

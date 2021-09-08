@@ -1,20 +1,24 @@
-{% extends 'base.html' %}
+<!DOCTYPE html>
 {% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/null_for_templates.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
 
-    {% block css %}
-        <link rel="stylesheet" href="{% static 'css/style.css' %}">
-    {% endblock css %}
+   
+    <title>Главная</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="show">
+        </div>
 
-    {% block title %}<title>Главная</title>{% endblock title %}
-
-    {% block header %}
         {% include 'header.html' %}
-    {% endblock header%}
 
-
-    <div class="show"></div>
-    <main>
-        {% block content %}
+        <main>
             {% include 'container_main.html' %}
             {% include 'container_news.html' %}
             {% include 'container_service.html' %}
@@ -22,16 +26,14 @@
             {% include 'container_number.html' %}
             {% include 'container_media.html' %}
             {% include 'container_payment.html' %}
-        {% endblock content %}
-     </main>
+        </main>
 
-    {% block footer %}
         {% include 'footer.html' %}
-    {% endblock footer%}
-
-
-    {% block js %}
+    </div>
     <script src="{% static 'js/header.js' %}"></script>
+    <script src="{% static 'js/slider_social.js' %}"></script>
+    <script src="{% static 'js/main__video.js' %}"></script>
     <script src="{% static 'js/news_slider.js' %}"></script>
     <script src="{% static 'js/show-media.js' %}"></script>
-    {% endblock js %}
+</body>
+</html>

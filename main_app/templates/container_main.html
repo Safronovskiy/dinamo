@@ -1,22 +1,30 @@
 {% load static %}
+
             <div class="container__main">
-                <div class="main">
-                    <div class="main__background">
-                        <div class="main__arrow left"></div>
-                        <div class="container">
-                            <div class="main__content">
-                                <h1 class="main__title">
-                                    Национальный <br> олимпийский <br> стадион «Динамо»
-                                </h1>
-                                <p class="main__subtitle">
-                                    Рождён для ярких побед
-                                </p>
-                                <a href="#" class="main__link">
-                                    История стадиона
-                                </a>
-                            </div>
+                <video class="main__video" width="100%" height="auto" autoplay="autoplay" loop muted>
+                    <source src="{% static 'img/dinamo.mp4' %}" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+                </video>
+                <video hidden class="main__video" width="100%" height="auto" autoplay="autoplay" loop muted>
+                    <source src="{% static 'img/dinamo.mp4' %}" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+                </video>
+                <video hidden class="main__video" width="100%" height="auto">
+                    <source src="{% static 'img/dinamo.mp4' %}" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+                </video>
+                <div class="main__background">
+                    <div class="main__arrow left"></div>
+                    <div class="container">
+                        <div class="main__content">
+                            <h1 class="main__title">
+                                Национальный <br> олимпийский <br> стадион «Динамо»
+                            </h1>
+                            <p class="main__subtitle">
+                                Рождён для ярких побед
+                            </p>
+                            <a href="{% url 'about:history' %}" class="main__link">
+                                История стадиона
+                            </a>
                         </div>
-                        <div class="main__arrow right"></div>
                     </div>
+                    <div class="main__arrow right"></div>
                 </div>
             </div>

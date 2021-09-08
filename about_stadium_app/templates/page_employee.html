@@ -1,0 +1,105 @@
+<html lang="rus">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/page-employee-style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/null_for_templates.css' %}">
+
+    <title>Наши сотрудники</title>
+</head>
+<body>
+   {% include 'header.html' %}
+    <div class="wrapper">
+    <section>
+        <div class="navigation_block_employee">
+            <div class="container">
+                <div class="employee_navigate">
+                    <a href="{% url 'main:main_page' %}" class="header_link_employee">Главная</a>
+                    <img src="{% static 'img/icons/icon-arrow-active-right.svg' %}">
+                    <a href="{% url 'about:about' %}" class="header_link_hidden1_employee">О стадионе</a>
+                    <img src="{% static 'img/icons/icon-arrow-active-right.svg' %}">
+                    <a href="{% url 'about:employee' %}" class="header_link_hidden3_employee">Наши сотрудники</a>
+                    <img src="{% static 'img/icons/icon-arrow-active-right.svg' %}" class="last_arrow">
+                    <a href="." class="header_link_hidden2_employee">Наши сотрудники</a>
+                   
+                </div>
+                <p class="hidden_employee">Наши сотрудники</p>
+                <div>
+                    <a href="{% url 'about:employee' %}" class="back_link">
+                        <div class="back_link_img">
+                            <img src="{% static 'img/icons/back_link_left.svg' %}">
+                        </div>
+                        <div class="back_link_text">
+                            Вернуться к списку сотрудников
+                        </div>
+                    </a>
+                </div>
+                <div class="employee_heading">
+                    <p class="employee_heading_text">Николай Брытков. Первопроходец</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="employee_block">
+            <div class="container_employee">
+                <div class="wrap_block_employee">
+                    <div class="wrap_card">
+                        <div class="wrap_card_left">
+                            <p>Николай Александрович Брытков уже больше года работает на «Динамо»: занимается обслуживанием помещений и уборкой территории. За спиной у нашего героя – длинный и насыщенный событиями спортивный путь, который начался за тысячи километров от Минска – на Южном Урале, в Башкирской Автономной ССР.</p>
+                            <p class="last_text">В краях, откуда я родом, добывают лучший мед в мире!  Зима там длинная, поэтому, как и все дети, мальчишкой я вместе с друзьями катался на санках, бегал на лыжах. А чуть позже понял, что хочу заниматься единоборствами: бокс в качестве варианта не рассматривал, а однажды увидел, как занимаются борьбой в костюмах и понял – это моё.</p>
+                        </div>
+                        <div class="wrap_card_right">
+                            <img src="{% static 'img/photo_employee/photo1.png' %}" class="photo1">
+                        </div>
+                    </div>
+                    <div class="wrap_card">
+                        <div class="wrap_card_left">
+                            <p>Николай Александрович вырос в мастера спорта по самбо, а после попробовал себя в дзюдо: в кимоно переодевали всех ведущих самбистов. Первый «блин» вышел отличным: в 1973 году наш герой стал финалистом первого отечественного чемпионата по дзюдо! В том же году начала свою историю федерация дзюдо в СССР, поэтому Николай Брытков – среди первопроходцев.</p>
+                            <p class="last_text">В 1975 году я приехал в Беларусь по приглашению Семена Абрамовича Гуманова. Тогда я был уже мастером спорта и по дзюдо. Те времена вспоминаю с теплом: мы были молоды, вокруг – чистота и красота! Сразу же поехал жить в «Стайки», отучился в институте физической культуры, а потом был распределен в БГУ тренером по дзюдо. Тогда наставников в этом виде спорта было совсем мало, это направление только зарождалось.    </p>
+                        </div>
+                        <div class="wrap_card_right">
+                            <img src="{% static 'img/photo_employee/photo2.png' %}" class="photo2">
+                        </div>
+                    </div>
+                    <div class="wrap_card">
+                        <div class="wrap_card_left">
+                            <p>На юридическом факультете со сборной БГУ Николай Александрович работал как с мужской, так и с женской командами. Своих учеников и учениц тренер помнит очень хорошо, а многие из них – знакомы и вам.</p>
+                            <p class="last_text">Все знаменитые белорусы-дзюдоисты прошли через наши руки. Это Руслан Шарапов – призёр чемпионатов Европы, участник Олимпийских игр, Сергей Шундиков – чемпион Европы, призёр чемпионата мира, участник двух Олимпиад, Валерий Перковский, Олег Шапчиц, Вячеслав Матвейчук, Юрий Плавсюк, Сергей Буякевич (помимо прочего, он один из лучших адвокатов в стране). Попасть к нам стремились многие, отбор был сложным: надо было минимум быть призёром соревнований масштаба СССР.</p>
+                        </div>
+                        <div class="wrap_card_right">
+                            <img src="{% static 'img/photo_employee/photo3.png' %}" class="photo3">
+                            <img src="{% static 'img/photo_employee/photo4.png' %}" class="photo4">
+                        </div>
+                    </div>
+                    <div class="wrap_card">
+                        <div class="wrap_card_left">
+                            <p>В свою очередь и спортсмены о тренере не забывают, как отмечает Николай Александрович, наиболее отзывчивыми являются именно женщины: до сих пор поздравляют с днем рождения. В БГУ наш герой проработал более 40 лет! После выхода на пенсию пришел работать на «Динамо» и увидел много знакомых лиц. Стадион Николай Брытков знает хорошо, и может сравнить «Динамо» советский и обновленный.</p>
+                            <p>Раньше на стадионе жизнь буквально кипела! Каких только секций не было, казалось, здесь занимаются спортом день и ночь! Сейчас, конечно, все по-другому: основной акцент сделан на футбол и легкую атлетику.</p>
+                            <p class="last_text">Что пожелаю стадиону? Чтобы на нем одерживали больше побед! Многие ведь любят возмущаться из-за поражений спортсменов, но я всегда говорю: «иди сам поиграй, попробуй!». Поэтому пусть у наших спортсменов все будет получаться!</p>                            
+                        </div>
+                        <div class="wrap_card_right">
+                            <img src="{% static 'img/photo_employee/photo5.png' %}" class="photo5">
+                            <img src="{% static 'img/photo_employee/photo6.png' %}" class="photo6">
+                        </div>
+
+                    </div>
+                    <div class="button_prev">
+                    <a href="{% url 'about:employee' %}" class="prev_page">
+                        <img src="{% static 'img/icons/arrow_left_white.svg' %}">Вернуться к списку сотрудников
+                    </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    
+    
+    {% include 'footer.html' %}
+</div>
+    <script src="{% static 'js/header.js' %}"></script>
+</body>
+</html>

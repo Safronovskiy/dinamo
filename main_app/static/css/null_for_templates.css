@@ -1,30 +1,30 @@
 @font-face {
     font-family: Roboto Condensed; /* Гарнитура шрифта */
-    src: url(/static/fonts/RobotoCondensed/RobotoCondensed-Bold.ttf); /* Путь к файлу со шрифтом */
+    src: url(../fonts/RobotoCondensed/RobotoCondensed-Bold.ttf); /* Путь к файлу со шрифтом */
     font-weight: bold;
     font-style: normal;
 }
 @font-face {
     font-family: Roboto Condensed; /* Гарнитура шрифта */
-    src: url(/static/fonts/RobotoCondensed/RobotoCondensed-BoldItalic.ttf); /* Путь к файлу со шрифтом */
+    src: url(../fonts/RobotoCondensed/RobotoCondensed-BoldItalic.ttf); /* Путь к файлу со шрифтом */
     font-weight: bold;
     font-style: italic;
 }
 @font-face {
     font-family: Roboto Condensed; /* Гарнитура шрифта */
-    src: url(/static/fonts/RobotoCondensed/RobotoCondensed-Regular.ttf); /* Путь к файлу со шрифтом */
+    src: url(../fonts/RobotoCondensed/RobotoCondensed-Regular.ttf); /* Путь к файлу со шрифтом */
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
     font-family: Roboto; /* Гарнитура шрифта */
-    src: url(/static/fonts/Roboto/Roboto-Regular.ttf); /* Путь к файлу со шрифтом */
+    src: url(../fonts/Roboto/Roboto-Regular.ttf); /* Путь к файлу со шрифтом */
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
     font-family: Roboto; /* Гарнитура шрифта */
-    src: url(/static/fonts/Roboto/Roboto-Medium.ttf); /* Путь к файлу со шрифтом */
+    src: url(../fonts/Roboto/Roboto-Medium.ttf); /* Путь к файлу со шрифтом */
     font-weight: 500;
     font-style: normal;
 }

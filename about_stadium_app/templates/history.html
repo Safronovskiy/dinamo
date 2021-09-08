@@ -1,3 +1,4 @@
+
 <html lang="rus">
 {% load static %}
 <head>
@@ -6,23 +7,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{% static 'css/history-style.css' %}">
     <link rel="stylesheet" href="{% static 'css/null_for_templates.css' %}">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:Roboto+Condensed&subset=cyrillic" rel="stylesheet">
     <title>История</title>
 </head>
 <body>
 
-{% include 'header.html' %}
+    {% include 'header.html' %}
 
     <div class="wrapper">
     <section>
         <div class="navigation_block">
             <div class="container">
                 <div class="history_navigate">
-                    <p class="header_link">Главная</p>
+                    <a href="{% url 'main:main_page' %}" class="header_link">Главная</a>
                     <img src="{% static 'img/icons/icon-arrow-active-right.svg' %}">
-                    <p class="header_link_hidden1">О стадионе</p>
+                    <a href="{% url 'about:about' %}" class="header_link_hidden1">О стадионе</a>
                     <img src="{% static 'img/icons/icon-arrow-active-right.svg' %}">
-                    <p class="header_link_hidden2">История стадиона</p>
+                    <a href="{% url 'about:history' %}" class="header_link_hidden2">История стадиона</a>
                 </div>
                 <div class="history_heading">
                     <p class="history_heading_text">История стадиона. Интересные факты</p>
@@ -37,14 +37,14 @@
                     <div class="left_block">
                         <div class="drop_menu position-sticky">
                             <ul class="block_drop_menu ">
-                                <li class="change active"><a href="#general_info">Общая информация</a></li>
-                                <li class="change" ><a href="#number" class="change">Цифры</a></li>
-                                <li class="change" ><a href="#start1934" class="change">1934 начало</a></li>
-                                <li class="change"><a href="#reconstr" class="change">Реконструкции</a></li>
-                                <li class="change"><a href="#ceremoni" class="change">Церемония открытия после реконструкции 2012-2018</a></li>
-                                <li class="change"><a href="#voice_stadium" class="change">Голос стадиона</a></li>
-                                <li class="change"><a href="#interesting_facts" class="change">Интересные факты</a></li>
-                                <li class="change"><a href="#interesting_articles" class="change">Интересные статьи о стадионе</a></li>
+                                <a href="#general_info"><li class="change active">Общая информация</li></a>
+                                <a href="#number" class="change"><li class="change" >Цифры</li></a>
+                                <a href="#start1934" class="change"><li class="change" >1934 начало</li></a>
+                                <a href="#reconstr" class="change"><li class="change">Реконструкции</li></a>
+                                <a href="#ceremoni" class="change"><li class="change">Церемония открытия после реконструкции 2012-2018</li></a>
+                                <a href="#voice_stadium" class="change"><li class="change">Голос стадиона</li></a>
+                                <a href="#interesting_facts" class="change"><li class="change">Интересные факты</li></a>
+                                <a href="#interesting_articles" class="change"><li class="change">Интересные статьи о стадионе</li></a>
                             </ul>
                         </div>
                     </div>
@@ -155,19 +155,19 @@
                                 </div>
                                 <div class="navigate_line">
                                     <div class="left_button">
-                                        <button class="prev"><img src="{% static 'img/icons/right_arrow_button.svg' %}"></button>
+                                        <button class="prev block"><img src="{% static 'img/icons/right_arrow_button.svg' %}"></button>
                                     </div>
                                     <div class="center_block">
-                                        <div class="center_navigate_line">
-                                            <div class="circle1"><div class="circle1_little"></div></div>
+                                        <div class="center_navigate_line ">
+                                          <div class=" circle circle1 active_circle"><div class=" circle_little circle1_little active_circle_little"></div></div>
                                             <hr>
-                                            <div class="circle2"><div class="circle2_little"></div></div>
+                                            <div class="circle circle5"><div class="circle_little circle5_little"></div></div>
                                             <hr>
-                                            <div class="circle3"><div class="circle3_little"></div></div>
+                                            <div class="circle circle2"><div class="circle_little circle2_little"></div></div>
                                             <hr class="hr5">
-                                            <div class="circle4"><div class="circle4_little"></div></div>
+                                            <div class="circle circle3"><div class="circle_little circle3_little"></div></div>
                                             <hr class="hr5">
-                                            <div class="circle5"><div class="circle5_little"></div></div>
+                                            <div class="circle circle4"><div class="circle_little circle4_little"></div></div>
                                         </div>
                                         <div class="number_block">
                                             <div class="number1"></div>
@@ -180,25 +180,37 @@
                                             <p class="first_text">I реконструкция</p>
                                             <p class="second_text">1937-1939 года</p>
                                             <p class="third_text">Десятитысячные трибуны перестали вмещать всех желающих. И их решили расширить. Так на "Динамо" появились дополнительные трибуны, и его вместимость выросла до 12 тысяч.</p>
+                                            <p class="first_text1">II реконструкция</p>
+                                            <p class="second_text1">1937-1939 года</p>
+                                            <p class="third_text1">Десятитысячные трибуны перестали вмещать всех желающих. И их решили расширить. Так на "Динамо" появились дополнительные трибуны, и его вместимость выросла до 12 тысяч.</p>
+                                            <p class="first_text2">III реконструкция</p>
+                                            <p class="second_text2">1937-1939 года</p>
+                                            <p class="third_text2">Десятитысячные трибуны перестали вмещать всех желающих. И их решили расширить. Так на "Динамо" появились дополнительные трибуны, и его вместимость выросла до 12 тысяч.</p>
+                                            <p class="first_text3">IIII реконструкция</p>
+                                            <p class="second_text3">1937-1939 года</p>
+                                            <p class="third_text3">Десятитысячные трибуны перестали вмещать всех желающих. И их решили расширить. Так на "Динамо" появились дополнительные трибуны, и его вместимость выросла до 12 тысяч.</p>
+                                            <p class="first_text4">IIIII реконструкция</p>
+                                            <p class="second_text4">1937-1939 года</p>
+                                            <p class="third_text4">Десятитысячные трибуны перестали вмещать всех желающих. И их решили расширить. Так на "Динамо" появились дополнительные трибуны, и его вместимость выросла до 12 тысяч.</p>
                                         </div>
                                     </div>
                                         <div class="right_button">
-                                            <button class="next"><img src="{% static 'img/icons/left_arrow_button.sv' %}g"></button>
+                                            <button class="next"><img src="{% static 'img/icons/left_arrow_button.svg' %}"></button>
                                         </div>
                                 </div>
                                 <div class="navigate_line_hidden">
                                     <div class="center_block">
-                                        <div class="center_navigate_line">
-                                            <div class="circle1"><div class="circle1_little"></div></div>
-                                            <hr>
-                                            <div class="circle2"><div class="circle2_little"></div></div>
-                                            <hr>
-                                            <div class="circle3"><div class="circle3_little"></div></div>
-                                            <hr class="hr5">
-                                            <div class="circle4"><div class="circle4_little"></div></div>
-                                            <hr class="hr5">
-                                            <div class="circle5"><div class="circle5_little"></div></div>
-                                        </div>
+                                        <div class="center_navigate_line ">
+                                            <div class="circle_hidden circle1_hidden active_circle_hidden"><div class=" circle_little_hidden circle1_little_hidden active_circle_little_hidden"></div></div>
+                                              <hr>
+                                              <div class="circle_hidden circle5_hidden"><div class="circle_little_hidden circle5_little_hidden"></div></div>
+                                              <hr>
+                                              <div class="circle_hidden circle2_hidden"><div class="circle_little_hidden circle2_little_hidden"></div></div>
+                                              <hr class="hr5">
+                                              <div class="circle_hidden circle3_hidden"><div class="circle_little_hidden circle3_little_hidden"></div></div>
+                                              <hr class="hr5">
+                                              <div class="circle_hidden circle4_hidden"><div class="circle_little_hidden circle4_little_hidden"></div></div>
+                                          </div>
                                         <div class="number_block">
                                             <div class="number1"></div>
                                             <div class="number2"></div>
@@ -207,17 +219,29 @@
                                             <div class="number5"></div>
                                         </div>
                                         <div class="slider_button">
-                                            <div class="left_button">
-                                                <button class="prev"><img src="{% static 'img/icons/right_arrow_button.svg' %}"></button>
+                                            <div class="left_button_hidden">
+                                                <button class="prev_hidden block_hidden"><img src="{% static 'img/icons/right_arrow_button.svg' %}"></button>
                                             </div>
-                                            <div class="right_button">
-                                                <button class="next"><img src="{% static 'img/icons/left_arrow_button.svg' %}"></button>
+                                            <div class="right_button_hidden">
+                                                <button class="next_hidden"><img src="{% static 'img/icons/left_arrow_button.svg' %}"></button>
                                             </div>
                                         </div>
-                                        <div class="text_under_line">
-                                            <p class="first_text">I реконструкция</p>
-                                            <p>1937-1939 года</p>
-                                            <p>Десятитысячные трибуны перестали вмещать всех желающих. И их решили расширить. Так на "Динамо" появились дополнительные трибуны, и его вместимость выросла до 12 тысяч.</p>
+                                        <div class="text_under_line elem_hidden">
+                                            <p class="first_text_hidden">I реконструкция</p>
+                                            <p class="second_text_hidden">1937-1939 года</p>
+                                            <p class="third_text_hidden">Десятитысячные трибуны перестали вмещать всех желающих. И их решили расширить. Так на "Динамо" появились дополнительные трибуны, и его вместимость выросла до 12 тысяч.</p>
+                                            <p class="first_text1_hidden">II реконструкция</p>
+                                            <p class="second_text1_hidden">1937-1939 года</p>
+                                            <p class="third_text1_hidden">Десятитысячные трибуны перестали вмещать всех желающих. И их решили расширить. Так на "Динамо" появились дополнительные трибуны, и его вместимость выросла до 12 тысяч.</p>
+                                            <p class="first_text2_hidden">III реконструкция</p>
+                                            <p class="second_text2_hidden">1937-1939 года</p>
+                                            <p class="third_text2_hidden">Десятитысячные трибуны перестали вмещать всех желающих. И их решили расширить. Так на "Динамо" появились дополнительные трибуны, и его вместимость выросла до 12 тысяч.</p>
+                                            <p class="first_text3_hidden">IIII реконструкция</p>
+                                            <p class="second_text3_hidden">1937-1939 года</p>
+                                            <p class="third_text3_hidden">Десятитысячные трибуны перестали вмещать всех желающих. И их решили расширить. Так на "Динамо" появились дополнительные трибуны, и его вместимость выросла до 12 тысяч.</p>
+                                            <p class="first_text4_hidden">IIIII реконструкция</p>
+                                            <p class="second_text4_hidden">1937-1939 года</p>
+                                            <p class="third_text4_hidden">Десятитысячные трибуны перестали вмещать всех желающих. И их решили расширить. Так на "Динамо" появились дополнительные трибуны, и его вместимость выросла до 12 тысяч.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -369,53 +393,9 @@
             </div>
         </div>
     </section>
-    <footer>
-        <div class="container">
-            <div class="footer">
-                <nav class="footer__nav">
-                    <a href="#" class="footer__link footer__text">
-                        Карта сайта
-                    </a>
-                    <a href="#" class="footer__link footer__text">
-                        Обратная связь
-                    </a>
-                </nav>
-                <div class="footer__social">
-                    <p class="footer__social-title footer__text">
-                        Следите за нами в соц.сетях
-                    </p>
-                    <div class="footer__social-block">
-                        <a href="#" class="social-block__link">
-                            <img src="{% static 'img/footer/instagramm.svg' %}" alt="">
-                        </a>
-                        <a href="#" class="social-block__link">
-                            <img src="{% static 'img/footer/facebook.svg' %}" alt="">
-                        </a>
-                        <a href="#" class="social-block__link">
-                            <img src="{% static 'img/footer/vk.svg' %}" alt="">
-                        </a>
-                        <a href="#" class="social-block__link">
-                            <img src="{% static 'img/footer/youtube.svg' %}" alt="">
-                        </a>
-                    </div>
-                </div>
-                <form action="#" class="footer__form">
-                    <p class="footer__form-title footer__text">
-                        Подписывайтесь на email-рассылку
-                    </p>
-                    <div class="footer__form-block">
-                        <input type="text" class="form-block__input" placeholder="sportsmen228@gmail.com">
-                        <button class="form-block__button footer__text">
-                            Подписаться
-                        </button>
-                    </div>
-                </form>
-            </div>
-            <p class="footer__subtitle">
-                2021 © Все права защищены
-            </p>
-        </div>
-    </footer>
+
+   {% include 'footer.html' %}
+
 </div>
 
     <script src="{% static 'js/slider.js' %}"></script>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+{% if user.is_authenticated %}
+    <p>You are logged in already.</p>
+{% else %}
+    <form action="" method="POST">
+      {% csrf_token %}
+          {{form.as_p}}
+          <input type="hidden" name="next" value="{{ next }}">
+          <input type="submit" value="log in">
+    </form>
+{% endif %}
+
+
+</body>
+</html>

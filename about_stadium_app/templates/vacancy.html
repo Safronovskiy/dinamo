@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/null_for_templates.css' %}">
+    <link rel="stylesheet" href="{% static 'css/vacancy-style.css' %}">
+    <title>Document</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="container__background">
+
+        </div>
+        {% include 'header.html' %}
+        <main>
+            <div class="container__vacancy">
+                <div class="container">
+                    <div class="vacancy">
+                        <div class="vacancy__nav">
+                            <a href="{% url 'main:main_page' %}" class="vacancy__link">
+                                Главная
+                            </a>
+                            <div class="vacancy__nav-img">
+                                <img src="{% static 'img/vacancy_nav_vektor.svg' %}" alt="">
+                            </div>
+                            <a href="{% url 'about:about' %}" class="vacancy__link">
+                                О стадионе
+                            </a>
+                            <div class="vacancy__nav-img">
+                                <img src="{% static 'img/vacancy_nav_vektor.svg' %}" alt="">
+                            </div>
+                            <a href="." class="vacancy__link link__color">
+                                Вакансии
+                            </a>
+                        </div>
+                        <h2>
+                            Вакансии национального олимпийстого стадиона «Динамо»
+                        </h2>
+                        <div class="vacancy__contact">
+                            <div class="vacancy__mail">
+                                <p class="contact__title">
+                                    Электронный адрес для резюме:
+                                </p>
+                                <p class="contact__subtitle">
+                                    Если вы хотите у нас работать, но не нашли подходящей вакансии, отправьте свое резюме либо напишите о себе на почту
+                                </p>
+                                <a href="#" class="contact__subtitle-red">
+                                    kadry@stadium-dinamo.by
+                                </a>
+                            </div>
+                            <div class="vacancy__telefon">
+                                <p class="contact__title">
+                                    Капшина Алена Александровна, начальник отдела правовой и кадровой работы:
+                                </p>
+                                <a href="#" class="contact__subtitle-red">
+                                    +375 (17) 243 01 59
+                                </a>
+                            </div>
+                        </div>
+                        <div class="vacancy__block">
+                            <div class="vacancy__block-title">
+                                Ведущий инженер-электрик
+                            </div>
+                            <div class="vacancy__block-about">
+                                <ul class="about-list__title">
+                                    <li>
+                                        ЗП до <span>900 BYN</span>
+                                    </li>
+                                    <li>
+                                        Требуемый опыт работы: <span>от 3 лет</span>
+                                    </li>
+                                    <li>
+                                        Полная занятость, полный день
+                                    </li>
+                                </ul>
+                                <p class="list__title">
+                                    Требования
+                                </p>
+                                <ul class="about__list">
+                                    <li>
+                                        Законченное высшее техническое образование
+                                    </li>
+                                    <li>
+                                        Понимание принципов и методик построения сетей, модели OSI
+                                    </li>
+                                    <li>
+                                        Опыт работы с системами мониторинга (Zabbix)
+                                    </li>
+                                    <li>
+                                        Опыт работы с системами виртуализации VMware
+                                    </li>
+                                    <li>
+                                        Опыт развёртывания и поддержки ПО на базе продуктов Microsoft (AD, DNS, WSUS, GPO) и Linux (CentOS)
+                                    </li>
+                                    <li>
+                                        Опыт работы с системами хранения данных (СХД)
+                                    </li>
+                                    <li>
+                                        Знание английского языка для чтения технической документации
+                                    </li>
+                                    <li>
+                                        Ответственность, исполнительность, коммуникабельность
+                                    </li>
+                                    <li>
+                                        Внимательность, не конфликтность
+                                    </li>
+                                </ul>
+                                <p class="list__title">
+                                    Обязанности
+                                </p>
+                                <ul class="about__list">
+                                    <li>
+                                        Администрирование сетевого оборудования компании (HPE, Cisco, Aruba)
+                                    </li>
+                                    <li>
+                                        Обслуживание ЦОД (HPE BladeSystem, StoreOnce, 3par, DELL)
+                                    </li>
+                                    <li>
+                                        Администрирование серверов WindowsServer 2012R2 (DC,1C,PrintServer, WSUS и др.);
+                                        - диагностика, определение и устранение неисправностей компьютерного оборудования
+                                    </li>
+                                    <li>
+                                        Обеспечение резервного копирования данных
+                                    </li>
+                                    <li>
+                                        Поддержка в актуальном состояние технической документации
+                                    </li>
+                                    <li>
+                                        Поддержка бухгалтерского ПО
+                                    </li>
+                                    <li>
+                                        Обслуживание компьютерной техники, МФУ, принтеров и консультирование пользователей
+                                    </li>
+                                </ul>
+                                <p class="list__title">
+                                    Приветствуется :
+                                </p>
+                                <ul class="about__list">
+                                    <li>
+                                        Наличие персональных технических сертификатов и статусов
+                                    </li>
+                                </ul>
+                                <p class="list__title">
+                                    Условия работы :
+                                </p>
+                                <ul class="about__list">
+                                    <li>
+                                        Работа в офисе (офис в центре Минска)
+                                    </li>
+                                    <li>
+                                        Время работы 8.30-17.30 (пятница с 8:30 – 16:15)
+                                    </li>
+                                    <li>
+                                        Отпуск 32 календарных дня (с делением на 2 части)
+                                    </li>
+                                </ul>
+                                <button class="list__button">
+                                    Откликнуться
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container__respond">
+                <div class="respond__cross">
+                    <img src="{% static 'img/vector_cross.svg' %}" alt="">
+                </div>
+                <h2 class="respond__title">
+                    Откликнуться на вакансию : <span>«Ведущий инженер (системный администратор)»</span>
+                </h2>
+                <p class="respond__subtitle">
+                    Расскажите нам о себе и мы обязательно свяжемся с вами
+                </p>
+                <form action="#" class="respond__form">
+                    <p class="form__text">
+                        ФИО
+                    </p>
+                    <input type="text" class="input__text" placeholder="Иванов Иван Иванович">
+                    <p class="form__text">
+                        Номер телефона
+                    </p>
+                    <input type="tel" class="input__tel" placeholder="+7 (_ _ _) _ _ _ - _ _ - _ _ ">
+                    <div class="input__wrapper">
+                        <input name="file" type="file" name="file" id="input__file" class="input input__file" multiple>
+                        <label for="input__file" class="input__file-button">
+                            <p class="form__text input__file-text">
+                                Перетащите или <span>загрузите файл</span> резюме
+                            </p>
+                            <p class="input__file-subtext">
+                                (.doc, .pdf, .docx, .rtf)
+                            </p>
+                        </label>
+                    </div>
+                    <p class="form__text">
+                        Или вставьте ссылку на hh.ru или superjob.ru
+                    </p>
+                    <input type="text" class="input__link" placeholder="ссылка на hh.ru или superjob.ru">
+                    <button class="form__button">
+                        Отправить
+                    </button>
+                </form>
+            </div>
+            <div class="container__send">
+                <div class="send__cross">
+                    <img src="{% static 'img/vector_cross.svg' %}" alt="">
+                </div>
+                <div class="send__image">
+                    <img src="{% static 'img/vector_send.svg' %}" alt="">
+                </div>
+                <div class="send__title">
+                    Ваш отклик отправлен
+                </div>
+                <div class="send__subtitle">
+                    Мы свяжемся с Вами в ближайшее время
+                </div>
+                <button class="send__button">
+                    Окей, жду
+                </button>
+            </div>
+        </main>
+        {% include 'footer.html' %}
+    </div>
+    <script src="{% static 'js/header.js' %}"></script>
+    <script src="{% static 'js/block__about.js' %}"></script>
+</body>
+</html>

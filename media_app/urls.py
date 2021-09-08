@@ -5,9 +5,11 @@ from .views import *
 app_name = 'media'
 
 urlpatterns = [
-    path('photo_gallery/', photo_gallery_view, name='photo_gallery'),
-    path('photo_detail/1/', photo_detail, name='photo_detail'),
 
+    path('photo_gallery/', photo_gallery_view, name='photo_gallery'),
+    path('photo_album/1/', photo_album, name='photo_album'),
     path('video_gallery/', video_gallery_view, name='video_gallery'),
-    path('video_details/1/', video_details_view, name='video_details'),
+    path('video_album/1/', video_album_view, name='video_album'),
 ]
+
+

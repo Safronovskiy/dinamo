@@ -5,27 +5,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <link rel="stylesheet" href="{% static 'css/null_for_templates.css' %}">
-    <link rel="stylesheet" href="{% static 'css/style.css' %}">
-
+    <link rel="stylesheet" href="{% static 'css/about-stadium-style.css' %}">
     <title>О стадионе</title>
 </head>
-
 <body>
     <div class="wrapper">
-
         {% include 'header.html' %}
 
         <main>
             <div class="container__nav">
                 <div class="container">
                     <div class="main__nav">
-                        <a href="#" class="main__nav-link">
+                        <a href="{% url 'main:main_page' %}" class="main__nav-link">
                             Главная
                         </a>
                         <img src="{% static 'img/main-nav-vector.svg' %}" alt="">
-                        <a href="#" class="main__nav-link">
+                        <a href="{% url 'about:about' %}" class="main__nav-link">
                             О стадионе
                         </a>
                     </div>
@@ -53,7 +49,7 @@
                                 История стадиона
                             </div>
                         </a>
-                        <a href="{% url 'about:management' %}" class="about__card">
+                        <a href="{% url 'about:managment' %}" class="about__card">
                             <div class="card__img">
                                 <img src="{% static 'img/card_img-2.png' %}" alt="">
                             </div>
@@ -61,7 +57,7 @@
                                 Руководство
                             </div>
                         </a>
-                        <a href="{% url 'about:brytkov' %}" class="about__card">
+                        <a href="{% url 'about:employee' %}" class="about__card">
                             <div class="card__img">
                                 <img src="{% static 'img/card_img-3.png' %}" alt="">
                             </div>
@@ -69,15 +65,14 @@
                                 Наши сотрудники
                             </div>
                         </a>
-                        <a href="#" class="about__card">
+                        <a href="{% url 'about:documents' %}" class="about__card">
                             <div class="card__img">
                                 <img src="{% static 'img/card_img-4.png' %}" alt="">
                             </div>
                             <div class="card__title">
                                 Документы
                             </div>
-                        </div>
-                        <a href="#" class="about__card">
+                        <a href="{% url 'about:vacancy' %}" class="about__card">
                             <div class="card__img">
                                 <img src="{% static 'img/card_img-5.png' %}" alt="">
                             </div>
@@ -109,53 +104,8 @@
                 </div>
             </div>
         </main>
-        <footer>
-            <div class="container">
-                <div class="footer">
-                    <nav class="footer__nav">
-                        <a href="#" class="footer__link footer__text">
-                            Карта сайта
-                        </a>
-                        <a href="#" class="footer__link footer__text">
-                            Обратная связь
-                        </a>
-                    </nav>
-                    <div class="footer__social">
-                        <p class="footer__social-title footer__text">
-                            Следите за нами в соц.сетях
-                        </p>
-                        <div class="footer__social-block">
-                            <a href="#" class="social-block__link">
-                                <img src="{% static 'img/footer/instagramm.svg' %}" alt="">
-                            </a>
-                            <a href="#" class="social-block__link">
-                                <img src="{% static 'img/footer/facebook.svg' %}" alt="">
-                            </a>
-                            <a href="#" class="social-block__link">
-                                <img src="{% static 'img/footer/vk.svg' %}" alt="">
-                            </a>
-                            <a href="#" class="social-block__link">
-                                <img src="{% static 'img/footer/youtube.svg' %}" alt="">
-                            </a>
-                        </div>
-                    </div>
-                    <form action="#" class="footer__form">
-                        <p class="footer__form-title footer__text">
-                            Подписывайтесь на email-рассылку
-                        </p>
-                        <div class="footer__form-block">
-                            <input type="text" class="form-block__input" placeholder="sportsmen228@gmail.com">
-                            <button class="form-block__button footer__text">
-                                Подписаться
-                            </button>
-                        </div>
-                    </form>
-                </div>
-                <p class="footer__subtitle">
-                    2021 © Все права защищены
-                </p>
-            </div>
-        </footer>
+
+        {% include 'footer.html' %}
     </div>
     <script src="{% static 'js/header.js' %}"></script>
 </body>

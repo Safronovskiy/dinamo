@@ -16,6 +16,8 @@ urlpatterns = [
     path('services/', include('services_app.urls')),
     path('cart/', include('cart_app.urls')),
     path('events/', include('events_app.urls')),
+    path('accounts/', include('accounts.urls')),
+    path('shop/', include('shop_app.urls')),
 
 
     path('admin/', admin.site.urls),

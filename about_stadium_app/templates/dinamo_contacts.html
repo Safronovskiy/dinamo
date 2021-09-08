@@ -6,10 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Контакты</title>
-
   <link rel="stylesheet" href="{% static 'css/null_for_templates.css' %}">
   <link rel="stylesheet" href="{% static 'css/dinamo_contacts.css' %}">
-
 </head>
 <body>
     {% include 'header.html' %}
@@ -18,9 +16,9 @@
 
     <nav class="navigation">
         <ul class="navigation__list">
-            <li><a href="#">Главная</a></li>
+            <li><a href="index.html">Главная</a></li>
             <li><img src="{% static 'img/icons/arrow-nav.svg' %}" alt="svg"></li>
-            <li><a href="#">Контакты</a></li>
+            <li><a href="dinamo_contacts.html">Контакты</a></li>
         </ul>
     </nav>
 
@@ -116,7 +114,7 @@
     </div>  
 </div>
   <div class="requisites__image">
-    <img src=" {% static 'img/stadion.png' %}" alt="stadion">
+    <img src="{% static 'img/stadion.png' %}" alt="stadion">
     <div class="requisites__image-grad"></div>
   </div>
 </section>
@@ -305,48 +303,7 @@
 </section>
 
 </div>
-<footer class = "footer">
-    <div class="footer__container">
-        <nav class="footer__nav">
-        
-            <ul class="footer__nav-list1">
-                <li><a href="#">Карта сайта</a></li>
-                <li><a href="#">Обратная связь</a></li>                    
-            </ul>
-            <ul class="footer__nav-list2">
-                <li class="footer__nav-list2-title">Следите за нами в соц.сетях</li>
-
-                <li class="footer__nav-list2-socials">
-                <a href="#"><img src="{% static 'img/icons/instagram-paint.svg' %}" alt="instagram"></a>
-                <a href="#"><img src="{% static 'img/icons/facebook-paint.svg' %}" alt="facebook"></a>
-                <a href="#"><img src="{% static 'img/icons/vk-paint.svg' %}" alt="vk"></a>
-                <a href="#"><img src="{% static 'img/icons/youtube-paint.svg' %}" alt="youtube"></a>
-                    
-                </li>
-            </ul>
-
-            <div class="footer__nav-mailing">
-                <div class="footer__nav-mailing-title">Подписывайтесь на email-рассылку</div>
-                <form action="#" method="#" class="footer__nav-mailing-form">
-                    <input type="text" placeholder="sportsmen228@gmail.com">
-                    <input class="footer__nav-mailing-form-subscribe" type="submit" value="Подписаться">
-                </form>
-            </div>
-        </nav>
-        <div class="footer__rights">
-             <span class="dinamic_year">
-                 <script>
-                 'use strict'
-            let dynamicYear = document.querySelector('.dinamic_year');
-            let date = new Date();
-            let nowYear = date.getFullYear();
-            dynamicYear.innerHTML = nowYear;
-                </script>
-            </span> &copy; Все права защищены
-            </div>            
-    </div>
-</footer>
-
+{% include 'footer.html' %}
   <script src="{% static 'js/header.js' %}"></script>
    <script src="{% static 'js/dinamo_contacts.js' %}"></script>
 </body>

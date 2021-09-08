@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-fnv7@kl1eh1lke579*9%ao*$_du%ssrko^)i5doojnffh)h5l!
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['127.0.0.1', ]
 
 
 # Application definition
@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
+    'accounts',
     'main_app',
     'media_app',
     'news_app',
@@ -47,6 +48,7 @@ INSTALLED_APPS = [
     'advertising_app',
     'about_stadium_app',
     'events_app',
+    'shop_app',
 
 ]
 
@@ -128,10 +130,10 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
-# STATICFILES_DIRS = (
-#     'specify path to folder with staticfiles',
-# )
 
+STATICFILES_DIRS = [
+    BASE_DIR / 'main_app' / 'static/',
+]
 
 STATIC_URL = '/static/'
 STATIC_ROOT = BASE_DIR / 'static'

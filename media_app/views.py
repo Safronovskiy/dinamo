@@ -8,12 +8,12 @@ def photo_gallery_view(request):
 
 
 def video_gallery_view(request):
-    return render(request, 'videoalbum.html', {})
+    return render(request, 'video_gallery.html', {})
 
 
-def video_details_view(request):
-    return render(request, 'videogallery.html', {})
+def video_album_view(request):
+    return render(request, 'video_album.html', {})
 
 
-def photo_detail(request):
-    return render(request, 'gallery.html', {})
+def photo_album(request):
+    return render(request, 'gallery_photo.html', {})
